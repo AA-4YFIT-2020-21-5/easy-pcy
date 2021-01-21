@@ -1,0 +1,5 @@
+Welche Aussage ist falsch?
+✔ Wenn die Anzahl der Pins nicht übereinstimmt, muss man ein anderes Netzteil hernehmen
+x Ein 20 Pin Stecker passt bei einem 24 Pin Anschluss und es gibt keine Probleme
+x Ein 24 Pin Stecker passt bei einem 20 Pin Anschluss und es gibt keine Probleme
+x Ein 24 Pin Stecker passt bei einem 24 Pin Anschluss

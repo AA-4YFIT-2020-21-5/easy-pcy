@@ -1,0 +1,11 @@
+Gehäuse
+Beim Gehäuse gibt es wie man im Bild sehen kann unten bei den PCIe Slots
+Metallstücke. Diese Metallstücke nennen wir einfachheitshalber Slots.
+Wenn man einen PCIe Slot für ein Bauteil hernehmen möchte,
+dann muss man diese Slots entfernen. Grafikkarten sind oft breiter
+und man muss zwei dieser Slots entfernen, falls die GPU aber doch schmäler ist,
+braucht man natürlich nur eins entfernen.
+
+Wichtig! Bei vielen Gehäusen kann man diese Slots nicht wieder anbringen sobald man sie
+einmal entfernt hat, deswegen muss man vorher unbedingt schauen wie viele man wirklich herunternehmen
+muss.

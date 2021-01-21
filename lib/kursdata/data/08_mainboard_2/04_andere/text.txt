@@ -1,0 +1,7 @@
+Andere
+Zusätlich gibt es noch einige kleine Stecker für
+den Power Knopf, für das Licht des Power Knopfes usw.
+Im Bild wird gezeigt, wo man was anstecken sollte.
+Dies kann sich aber von Mainboard/Gehäuse unterscheiden, dafür sollte man am Besten im Handbuch des Mainboards nachschauen.
+<bild>
+Am Ende sollte es so wie im Bild aussehen.

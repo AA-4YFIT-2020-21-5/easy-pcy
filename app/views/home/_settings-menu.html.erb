@@ -1,0 +1,45 @@
+<!-- Profil -->
+<li>
+  <a href="/profile">
+    <div class="icon"><i class="fas fa-user"></i></div>
+    Profil
+  </a>
+</li>
+
+<!-- Passwort -->
+<li>
+  <button data-toggle="modal" data-target="#modalPasswordForm">
+    <div class="icon"><i class="fas fa-key"></i></div>
+    Passwort ändern
+  </button>
+</li>
+
+<!-- Kursaktivität -->
+<li>
+  <button class="float-left w-100">
+    <div class="icon"><i class="fas fa-eye-slash"></i></div>
+    Kursaktivität verstecken
+
+    <!--Toggle Button-->
+    <label class="my-auto ml-auto switch float-right margin-right-10">
+      <input type="checkbox" name="" id="kurs-hide"
+             <%= 'checked' if @user&.hide_course_activity %> <%= 'disabled' unless @user %>>
+      <span class="slider"></span>
+    </label>
+  </button>
+</li>
+
+<!-- Forumaktivität -->
+<li>
+  <button class="float-left w-100">
+    <div class="icon"><i class="fas fa-eye-slash"></i></div>
+    Forumaktivität verstecken
+
+    <!--Toggle Button-->
+    <label class="my-auto ml-auto switch float-right margin-right-10">
+      <input type="checkbox" name="" id="forum-hide"
+             <%= 'checked' if @user&.hide_forum_activity %> <%= 'disabled' unless @user %>>
+      <span class="slider"></span>
+    </label>
+  </button>
+</li>

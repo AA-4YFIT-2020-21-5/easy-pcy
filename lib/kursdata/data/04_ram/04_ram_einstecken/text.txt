@@ -1,0 +1,6 @@
+RAM Einstecken
+Nun ist es Zeit den RAM einzubauen. Man achtet auf die Lücke des Riegels und legt ihn dann schon mal in den Steckplatz.
+Jetzt drückt man den Riegel auf beiden Enden gleichmäßig nach unten.
+Die Hebel rücken automatisch wieder in die Ursprungsposition zurück. Der RAM ist jetzt fest eingebaut.
+Wenn man RAM wieder ausbauen möchte, muss man wieder die Hebel runterdrücken.
+Dann "hüpft" der Riegel fast selbstständig heraus.

@@ -1,0 +1,5 @@
+Abschluss
+Am Ende sollten die Anschlüsse genau aus den Ausschnitten herausschauen und
+das Mainboard soll fest angeschraubt sein.
+Falls das IO Shield noch zu sehr herumwackeln sollte, kann man es noch ein wenig
+gegen das Gehäuse drücken.

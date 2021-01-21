@@ -1,0 +1,4 @@
+Generell
+Das Mainboard, oder auch Motherboard, ist die zentrale Platine des Rechners. Auf ihr werden alle Komponenten verbunden 
+und mit Strom versorgt, aber auch Daten werden hier ununterbrochen empfangen und gesendet.
+Man kann sich das Mainboard mehr oder weniger als die Blutbahnen eines Menschen vorstellen.

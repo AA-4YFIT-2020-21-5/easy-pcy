@@ -1,0 +1,3 @@
+Zwei 8 Gigabyte RAM-Riegel sind besser wie ein einziger 16 Gigabyte Riegel
+✔ Wahr
+x Falsch

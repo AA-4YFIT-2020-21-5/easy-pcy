@@ -1,0 +1,125 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+html {
+  scroll-behavior: smooth;
+}
+
+#bg-img {
+  background-image: url("/images/home/bg.jpg"); //Error wird angezeigt, ist aber kein Error
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //
+  //background-color: lightyellow;
+  min-height: 95vh;
+  overflow: auto;
+}
+
+#bg-img .rgba-stylish-strong {
+  height: 95vh;
+  overflow: auto;
+}
+
+.btn-round {
+  font-size: 2em !important;
+  border-radius: 50% !important;
+}
+
+#content {
+  margin-top: 7.5%;
+  display: flex;
+  justify-content: center;
+}
+
+//Jumping Button
+.text-center .btn-round {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin-top: 15vh
+}
+
+.text-center .btn-round i {
+  margin-left: -8.5px;
+}
+//Jumping Button
+
+#kurs {
+  margin-bottom: 5%;
+}
+
+#forum {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#forum blockquote {
+  border-right: .25rem solid #eceeef;
+  border-right: 3px solid #4285f4 !important;
+  border-left: none !important;
+}
+
+.ico {
+  float: left;
+  margin-right: 75px;
+}
+
+.block-text {
+  display: none;
+}
+
+//
+//.bq-primary{
+//  border-left: none !important;
+//}
+
+@media screen and (max-width: 992px) {
+  #bg-img {
+    width: 100% !important;
+  }
+
+  .ico {
+    float: none;
+    margin-right: 0;
+  }
+
+  .blockquote {
+    display: none;
+  }
+
+  .block-text {
+    display: initial;
+  }
+
+  #kurs, #forum {
+    text-align: center;
+  }
+
+  #forum {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #bg-img .fa-angle-double-down {
+    font-size: 7vw;
+    vertical-align: middle;
+    margin-right: auto;
+    //margin-left: auto !important;
+  }
+
+  #bg-img .btn-round {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #home-register {
+    //width: 40vw;
+    //height: 10vh;
+    //font-size: 5vw;
+  }
+}

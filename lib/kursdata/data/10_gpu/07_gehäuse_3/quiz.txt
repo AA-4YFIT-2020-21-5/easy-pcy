@@ -1,0 +1,5 @@
+Wie wird die GPU befestigt?
+✔ Am PCIe Slot und beim Gehäuse
+x Nur beim PCIe Slot
+x Man schraubt sie ans Mainboard an
+x Gar nicht

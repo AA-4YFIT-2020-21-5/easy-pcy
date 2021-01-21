@@ -1,0 +1,6 @@
+Generell
+Damit man den PC auch steuern kann, benötigt man sog. Peripheriegeräte.
+Diese sind Maus, Tastatur, Monitor, usw.
+Man braucht mindestens einen Anschluss zu einem Monitor und eine Maus und Tastatur.
+Man kann natürlich aber auch ein Mikrofon, Lautsprecher und falls das Mainboard kein integriertes WLAN hat,
+auch ein Internetkabel anschließen.

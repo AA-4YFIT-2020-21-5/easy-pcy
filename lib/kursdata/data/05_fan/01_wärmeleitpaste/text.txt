@@ -1,0 +1,8 @@
+Wärmeleitpaste
+Um die Wärme vom Prozessor auf den Kühlkörper des Kühlers zu leiten, braucht man eine Wärmeleitpaste.
+Eine Wärmeleitpaste kann man sich so kaufen, liegt manchmal aber auch beim Kühler oder beim Prozessor dabei.
+Wenn man aber noch niedrigere Temperaturen erzielen möchte, braucht man eine qualitativ hochwertige Wärmeleitpaste (z.B. von Thermal Grizzly).
+
+Es gibt noch eine andere Art der Wärmeleitpaste, bei dem man flüssiges Metall aufträgt.
+Diese Methode kann zwar besser kühlen, da es aber flüssiges Metall ist könnte es bei einer falschen Auftragung zu einem Kurzschluss führen.
+Wir raten das Benutzen von Flüssigmetall eher ab.

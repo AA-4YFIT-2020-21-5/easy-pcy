@@ -1,0 +1,3 @@
+Die Aufgabe des kleinen Metallstückes ist es, das Netzteil von unten zu heben.
+✔ Wahr
+x Falsch

@@ -1,0 +1,9 @@
+Formfaktoren
+Bei Mainboards und PC-Gehäuse gibt es drei Formfaktoren, welche die größe des Mainboards bestimmen:
+ATX,
+Micro-ATX und
+Mini-ITX.
+Wenn man sich ein Mainboard kauft, dann muss man sich auch ein Gehäuse des gleichen Formfaktors kaufen,
+ansonsten hat das Mainboard entweder keinen Platz, oder man kann es später nicht richtig anschrauben.
+Für Kompatibilität von PC Bauteilen empfehlen wir die Seite https://pcpartpicker.com/. Diese erkennt
+automatisch, ob die angegebene Hardware mit dem Rest kompatibel ist.

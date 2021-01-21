@@ -1,0 +1,5 @@
+In Sockel Reinlegen 1
+Bevor man die CPU aber in den Sockel reinlegen kann gibt es noch eine wichtige Anmerkung.
+Wie man die CPU reinlegt, ist wichtig.
+In den zwei Bildern kann man sehen, dass auf dem Prozessor, aber auch auf dem Mainboard ein kleines Dreieck abgebildet ist.
+Diese zwei Dreiecke müssen in der gleichen Position sein.

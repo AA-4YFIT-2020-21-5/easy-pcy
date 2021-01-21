@@ -1,0 +1,11 @@
+Generell
+Damit der Prozessor nicht in Flammen aufgeht, benötigt es eine Art Kühlung.
+Es gibt entweder Luft- oder Wasserkühlung, wobei in diesem Kurs nur die Luftkühlung gezeigt wird,
+da wir finden, dass Wasserkühlung zu kompliziert für Neueinsteiger ist und es den Kurs in die Länge strecken würde.
+
+In diesem Kurs wird der beigelegte Kühler des Intel Prozessors hergenommen.
+Andere Hersteller haben leider oft einen anderen Mechanismus, um den Kühler einzubauen.
+Im Handbuch des Kühlers müsste aber dabeistehen, wie er eingebaut gehört.
+
+Wichtig! Kühler müssen mit dem Mainboard kompatibel sein!
+Ein Kühler für ein Mainboard mit einem Intel Prozessor wird nicht auf ein Mainboard für AMD Prozessoren passen!

@@ -1,0 +1,9 @@
+Generell
+Willkommen zu diesem Kurs! Hier lernt man wie man einen PC zusammenbaut!
+In diesem Kurs gibt es bei jedem Kapitel Unterkurse, bei denen man zuerst etwas Theorie und Praxis lernt, und
+dann wird man in einen von drei verschiedenen Quizzen über dieses Thema gefragt.
+
+Die Quizze sind:
+Multiple-Choice Fragen, die Aussage ist richtig oder falsch, oder das fehlende Wort eintragen.
+
+Bevor wir starten gibt es aber noch einige wichtige Anmerkungen.

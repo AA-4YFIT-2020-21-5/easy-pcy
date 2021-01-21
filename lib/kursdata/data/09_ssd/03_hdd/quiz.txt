@@ -1,0 +1,3 @@
+Der Sinn von HDDs ist, dass sie sehr viel Speicherplatz besitzen
+✔ Wahr
+x Falsch

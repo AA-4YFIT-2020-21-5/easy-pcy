@@ -1,0 +1,9 @@
+IO Installieren
+Das Installieren des IO Shield ist ein wenig tricky.
+Wie im Video gezeigt wird kommt man von hinten und drückt dann beide Enden gegen das Gehäuse.
+Wenn es fest drinnen ist, hört man ein "klick" Geräusch.
+
+Bevor man es aber einbaut sollte man vorher noch überprüfen, wie man es einbaut.
+Dazu geht man mit dem IO Shield zu den Mainboard Anschlüssen und schaut nach,
+ob die Ausschnitte des IO Shields mit den Anschlüssen des Mainboards zusammenpassen,
+wenn nicht, dann hat man das Schild sehr wahrscheinlich auf dem Kopf.

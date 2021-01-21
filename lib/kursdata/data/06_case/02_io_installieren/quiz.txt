@@ -1,0 +1,3 @@
+Wenn die Ausschnitte nicht mit den Anschlüssen übereinstimmen, dann...
+x hat man das falsche IO Shield
+✔ hält man das IO Shield falsch

@@ -1,0 +1,12 @@
+Generell
+Grundsätzlich braucht man kein Gehäuse, es ist aber hauptsächlich ein Schutz für den PC und es sieht wesentlich besser
+aus, wenn sich der Computer in einem schönen Gehäuse befindet.
+Wie vorhin schon gesagt worden ist, müssen das Gehäuse und Mainboard den gleichen Formfaktor haben,
+ansonsten wird es nicht passen.
+Zusätzlich kann das Gehäuse bei der Kühlung helfen, insofern man zusätliche Kühler eingebaut hat.
+
+Der Mechanismus um das Gehäuse zu öffnen ist leider sehr verschieden.
+Bei vielen gibt es auf der Hinterseite oben und unten einen Schrauben den man losschrauben muss.
+Anschließend "schiebt" man die Seite nach hinten.
+Auf welcher Seite man aufschraubt ist wichtig! Man muss die Seite entfernen, die
+gegenüber des IO Shield ist (was das IO Shield ist, lernt man in der nächsten Einheit)

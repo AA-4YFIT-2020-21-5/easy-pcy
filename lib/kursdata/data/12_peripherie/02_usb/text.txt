@@ -1,0 +1,7 @@
+USB
+In dem Kurs wurde eine kabellose Maus und Tastatur hergenommen.
+Diese haben einen gemeinsamen USB Stecker.
+Diesen steckt man bei einem beliebigen USB Anschluss ein, egal ob der Anschluss vorne oder hinten ist.
+Wir empfehlen aber, dass man Maus und Tastatur hinten bei den grauen USB Anschlüsse anstecken sollte,
+weil die Anschlüsse vorne für USB-Sticks oder ähnlichem gedacht sind und farbige USB Anschlüsse (meistens blau)
+sind neuere Anschlüsse, die schneller sind und bei Maus und Tastatur reicht ein langsamerer Anschluss aus.

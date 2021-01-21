@@ -1,0 +1,12 @@
+GPU
+Bei Grafikkarten ist die Stromzufuhr ein wenig anderst.
+Falls sie keine Pins oben besitzt, dann reicht die Stromzufuhr vom Mainboard und man muss kein Kabel
+and die GPU anschließen.
+Ansonsten ist die Anzahl der Pins sehr unterschiedlich.
+Manche haben 6, manche 8, manche sogar 12.
+Bei der im Kurs verwendeten Grafikkarte gibt es 8 Pins.
+Falls es beim Netzteil kein 8 Pin Kabel gibt, muss es ein 6 + 2 Pin Kabel geben.
+Wie bei der CPU muss man diese gleichzeitig anstecken und falls es nicht reingeht,
+wieder umdrehen und erneut probieren.
+Im Bild kann man noch ein weiteres Kabel sehen, falls die Grafikkarte mehr Pins hat,
+kann man dieses Kabel verwenden, falls dies nicht der Fall ist kann es in der Luft hängen.

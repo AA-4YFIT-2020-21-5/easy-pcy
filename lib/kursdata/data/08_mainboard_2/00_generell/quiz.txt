@@ -1,0 +1,5 @@
+Wo befinden sich die Anschlüsse des Gehäuses auf dem Mainboard?
+x Links
+x Oben
+✔ Unten
+x Rechts

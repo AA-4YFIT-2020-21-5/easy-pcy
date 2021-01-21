@@ -1,0 +1,7 @@
+Generell
+Jetzt ist ein guter Zeitpunkt die Kabel vom Netzteil an die Komponenten anzuschließen.
+CPU und Mainboard brauchen natürlich immer Strom, falls man aber keine GPU hat kann man das Kabel
+für die Grafikkarte einfach ignorieren.
+
+Wichtig! Unterschiedliche Mainboards und unterschiedliche Netzteile können unterschiedliche Stecker haben, deswegen
+sollte man bevor dem Kauf sicherstellen, dass man alle benötigten Stecker beim Netzteil hat.

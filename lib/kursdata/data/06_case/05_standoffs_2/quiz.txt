@@ -1,0 +1,3 @@
+Die Anzahl der Schrauben hängt vom Formfaktor ab.
+✔ Wahr
+x Falsch

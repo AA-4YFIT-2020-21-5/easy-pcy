@@ -1,0 +1,5 @@
+Was passiert auf dem Mainboard?
+x Es sendet und empfängt Daten
+x Ist der zentrale Prozessor
+✔ Verbindet alle Komponenten
+x Alles obige

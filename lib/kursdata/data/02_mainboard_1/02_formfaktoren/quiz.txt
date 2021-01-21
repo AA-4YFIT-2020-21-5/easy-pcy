@@ -1,0 +1,5 @@
+Welche drei Hauptformfaktoren gibt es bei Mainboards?
+✔ ATX, Micro-ATX und Mini-ITX
+x ETX, und Nano-ITX
+x ATX, Micro-ITX und Mini-ATX
+x ITX, Micro-ITX und Mini-ATX

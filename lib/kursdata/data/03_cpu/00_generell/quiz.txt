@@ -1,0 +1,5 @@
+Was besagt die Anzahl der Kerne?
+x Die Anzahl der Befehle pro Sekunde
+x Wie schnell eine CPU ist
+x Option A und B
+✔ Wie viel Multitasking betrieben werden kann

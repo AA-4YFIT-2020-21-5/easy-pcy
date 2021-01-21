@@ -1,0 +1,10 @@
+GPU
+Beim Anschließen eines Monitors benötigt man ein Kabel, dass sowohl bei der Grafikkarte, aber auch beim Monitor passt.
+Z.B. HDMI auf HDMI, oder Display Port auf Display Port.
+Wenn z.B. die Grafikkarte einen HDMI Stecker hat, der Monitor aber nicht, sondern z.B. einen Display Port Stecker, braucht
+man einen Adapter, welcher HDMI auf Display Port konvertiert.
+In dem Kurs wurde bei der Grafikkarte und beim Monitor HDMI hergenommen.
+
+Wichtig!
+Wenn man eine Grafikkarte eingebaut hat, dann muss man die Anschlüsse von der Grafikkarte hernehmen.
+Wenn man keine Graffikkarte hat, dann muss man die Anschlüsse des Mainboards hernehmen.

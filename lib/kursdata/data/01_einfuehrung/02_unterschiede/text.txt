@@ -1,0 +1,5 @@
+Unterschiede
+Bei Hardware kann es leider von Hersteller zu Hersteller sehr viele Unterschiede geben,
+deswegen ist es schwer alles so grundlegend und allgemein wie möglich zu erklären.
+Falls man bei einem Schritt nicht weiterkommen sollte, weil im Kurs ein Bauteil
+anders eingebaut wurde, kann man gerne im Forum nach Hilfe fragen.

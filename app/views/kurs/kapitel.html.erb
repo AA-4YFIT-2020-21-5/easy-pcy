@@ -1,0 +1,67 @@
+<h1 id="kurs-title" class="display-3 margin-left-10 title"><%= @chapter.title %></h1>
+<!-- Edit -->
+<div id="change-title" class="md-form md-bg margin-left-10" style="display: none">
+  <input type="text" id="text-title" class="form-control bottom-border-purple" style="width: 63%">
+  <label for="text-title" class="purple-text">Titel</label>
+</div>
+
+<!-- Card -->
+<div id="kurse" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body px-0 pt-0">
+
+    <!-- Card -->
+    <div id="main-card" class="margin-left-10 margin-right-10 margin-top-10 chapter-card">
+      <p id="kurs-content" style="white-space: pre-line"><%= @chapter.content %></p>
+      <!-- Edit -->
+      <div id="change-content" class="md-form md-bg w-100 h-25" style="display: none">
+        <textarea id="content-change-textarea" style="overflow-y: auto" class="h-75 md-textarea form-control bottom-border-purple" rows="3" required></textarea>
+      </div>
+
+      <% @chapter.image_sources.each do |src| %>
+        <img src="<%= src %>" id="chapter-img" style="margin-bottom: 50px; width: 50%" class="img-fluid" alt="Responsive image"/>
+      <% end %>
+
+      <% if @chapter.video? %>
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="<%= @chapter.youtube_url %>"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen frameborder="0">
+          </iframe>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+
+  <div id="chapterFooter" class="d-flex card-footer text-center p-0">
+    <div class="w-50" style="width: 33%">
+      <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+        <a href="<%= "/kurs/#{@course.handle}" %>" class="my-auto text-center w-100" style="color: inherit">
+          <i class="fas fa-angle-left margin-right-10"></i>Zurück
+        </a>
+      </div>
+    </div>
+
+    <% if @user&.administrator? %>
+      <div style="border-left: 2px solid black; width: 33%;" id="change-btn-kurs">
+        <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+          <p class="m-0"><i class="fas fa-edit margin-right-10"></i>Bearbeiten</p>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="w-50" style="border-left: 2px solid black; width: 33%">
+      <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+        <a href="<%= "/kurs/#{@course.handle}/#{@chapter.handle}/quiz" %>" class="my-auto text-center w-100" style="color: inherit">
+          Weiter <i class="fas fa-angle-right margin-left-10"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= render 'profile' %>
+<script defer src="/js/change-kurs-content.js"></script>

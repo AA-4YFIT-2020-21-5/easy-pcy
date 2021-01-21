@@ -1,0 +1,6 @@
+Standoffs 2
+Sobald man das Mainboard in das Gehäuse gelegt hat muss man es anschrauben.
+Im Bild kann man sehen wo die Löcher für die Schrauben sind.
+Die Schrauben sind entweder beim Mainboard oder beim Gehäuse beigelegt.
+Sobald das Mainboard überall angeschraubt würde, könnte man das Gehäuse aufstellen und nachschauen, ob es gut hält,
+für den weiteren PC-Bau empfehlen wir aber das Gehäuse hinzulegen.

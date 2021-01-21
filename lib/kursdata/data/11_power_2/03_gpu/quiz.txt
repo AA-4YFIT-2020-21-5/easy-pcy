@@ -1,0 +1,5 @@
+Wenn die GPU keinen Stromanschluss hat, dann...
+x ist der Anschluss auf dem Mainboard
+✔ reicht die Zufuhr vom Mainboard
+x ist der Anschluss in der GPU
+x braucht die GPU keine Stromzufuhr

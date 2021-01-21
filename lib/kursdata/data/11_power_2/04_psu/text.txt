@@ -1,0 +1,8 @@
+PSU
+Beim Netzteil gibt es noch eine wichtige Sache zum anmerken.
+Wie man im Bild sehen kann, gibt es einen Schalter beim Netzteil, der standardgemäß
+auf "Aus" ist. Wenn man den PC einschalten möchte, muss man sicherstellen,
+dass der Schalter auf "I" bzw. An" ist.
+Wenn man aber im PC selber noch etwas ändern möchte oder hinzubauen möchte,
+muss man sicherheitshalber das Netzteil ausschalten und am Besten noch das Stromkabel
+entfernen falls eines eingesteckt ist.

@@ -1,0 +1,165 @@
+<h1 class="display-3 margin-left-10">Kurse</h1>
+
+<!-- Card -->
+<div id="kurse" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body px-0">
+
+    <!-- Card -->
+    <div id="main-card" class="container text-center">
+      <div class="mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/einfuehrung">
+            <div class="mx-auto circle">
+              <i class="fas fa-book fa-3x img-fluid kurs-icon-64" style="margin-top: 1rem"></i>
+            </div>
+            <p class="h5">Einführung</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/mainboard_1">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/mainboard.svg" class="mt-2 img-fluid kurs-icon-64">
+            </div>
+            <p class="h5">Mainboard I</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 row">
+        <div class="col">
+          <div class="sub-card">
+            <a href="/kurs/cpu">
+              <div class="mx-auto circle">
+                <img src="/images/kurs-icons/cpu.svg" class="mt-2 img-fluid kurs-icon-64">
+              </div>
+              <p class="h5">Prozessor</p>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="sub-card">
+            <a href="/kurs/ram">
+              <div class="mx-auto circle">
+                <img src="/images/kurs-icons/ram.svg" class="mt-2 img-fluid kurs-icon-64">
+              </div>
+              <p class="h5">Arbeitsspeicher</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/fan">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/fan.svg" class="margin-top-10 img-fluid kurs-icon-50">
+            </div>
+            <p class="h5">Kühler</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 row">
+        <div class="col">
+          <div class="sub-card">
+            <a href="/kurs/case">
+              <div class="mx-auto circle">
+                <img src="/images/kurs-icons/case.svg" class="mt-2 img-fluid kurs-icon-64">
+              </div>
+              <p class="h5">Gehäuse</p>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="sub-card">
+            <a href="/kurs/power_1">
+              <div class="mx-auto circle">
+                <img src="/images/kurs-icons/psu.svg" class="margin-top-10 img-fluid kurs-icon-50">
+              </div>
+              <p class="h5">Netzteil I</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/mainboard_2">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/mainboard.svg" class="mt-2 img-fluid kurs-icon-64">
+            </div>
+            <p class="h5">Mainboard II</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/ssd">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/ssd.svg" class="mt-2 img-fluid kurs-icon-50">
+            </div>
+            <p class="h5">Speicher</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/gpu">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/gpu.svg" class="mt-2 img-fluid kurs-icon-64">
+            </div>
+            <p class="h5">Grafikkarte</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/power_2">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/psu.svg" class="margin-top-10 img-fluid kurs-icon-50">
+            </div>
+            <p class="h5">Netzteil II</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 mx-auto">
+        <div class="sub-card">
+          <a href="/kurs/peripherie">
+            <div class="mx-auto circle">
+              <img src="/images/kurs-icons/mouse-keyboard.svg" class="mt-2 img-fluid kurs-icon-50">
+            </div>
+            <p class="h5">Peripheriegeräte</p>
+          </a>
+        </div>
+      </div>
+
+      <!--      Maybe later-->
+      <!--      <div class="mt-5 mx-auto">-->
+      <!--        <div class="mx-auto circle">-->
+      <!--          <img src="/images/kurs-icons/os.svg" class="margin-top-10 img-fluid kurs-icon-50">-->
+      <!--        </div>-->
+      <!--        <p class="h5">Betriebssystem</p>-->
+      <!--      </div>-->
+
+    </div>
+
+    <div class="card-footer text-center mt-5">
+      <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+        <p class="my-auto text-center w-100" data-toggle="modal" data-target="#icons">Hergenommene Icons</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= render 'profile' %>
+<%= render 'modal-icons' %>

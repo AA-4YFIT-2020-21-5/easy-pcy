@@ -1,0 +1,4 @@
+USB2
+Falls das Gehäuse graue USB Anschlüsse besitzt, muss man das dazugehörige Kabel
+bei "F-USB1" oder "F-USB2" einstecken. Diese Anschlüsse sind für USB Anschlüsse
+der zweiten Generation gedacht.

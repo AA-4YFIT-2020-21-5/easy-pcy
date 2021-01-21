@@ -1,0 +1,60 @@
+<h1 class="display-3 margin-left-10"><%= @course.title %></h1>
+
+<!-- Card -->
+<div id="kurse" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body px-0 pt-0">
+
+    <!-- Card -->
+    <div id="kurs-items" class="container text-center m-0 p-0">
+      <div class="list-group">
+        <% @course.chapters.sort { _1.id <=> _2.id }.each do |chapter| %>
+          <a href="<%= "/kurs/#{@course.handle}/#{chapter.handle}" %>" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between<%= ' text-success' if @user&.progress&.completed_chapter?(@course.handle, chapter.handle) %>">
+              <h5 class="mb-2 h5"><%= chapter.title %></h5>
+            </div>
+          </a>
+        <% end %>
+        <!--
+        <a href="./<%#= @course.handle %>/generell" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between text-success">
+            <h5 class="float-left mb-2 h5">Generell</h5>
+            <i class="fas fa-check-circle my-auto"></i>
+          </div>
+
+        </a>
+        <a href="./<%#= @course.handle %>/plastik" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between text-success">
+            <h5 class="mb-2 h5"> Plastik </h5>
+            <i class="fas fa-check-circle my-auto"></i>
+          </div>
+        </a>
+        <a href="./<%#= @course.handle %>/unterschiede" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-2 h5 text-info"><strong>Unterschiede bei Hardware</strong></h5>
+          </div>
+        </a>
+        <a href="./<%#= @course.handle %>/funktion" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-2 h5">Funktionalität</h5>
+          </div>
+        </a>
+      -->
+      </div>
+    </div>
+
+    <div class="card-footer text-center" style="position: absolute; bottom: 0; width: 100%">
+      <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+        <a href="/kurs" class="my-auto text-center w-100" style="color: inherit">
+          <i class="fas fa-angle-left margin-right-10"></i>Zurück
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<%= render "profile" %>

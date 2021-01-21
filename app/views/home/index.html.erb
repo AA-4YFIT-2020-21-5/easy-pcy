@@ -1,0 +1,73 @@
+<div id="bg-img" class="card card-img">
+  <div class="rgba-stylish-strong text-white">
+    <div class="text-center">
+      <img src="/images/home/logo-white.png" style="margin-top: 13%; width: 27vh"/>
+
+      <h2 class="h2-responsive">Lerne durch interaktive Quizze ganz einfach <br> deinen eigenen PC zusammenzubauen!</h2>
+
+      <% unless @user %>
+        <button type="button" class="btn purple-gradient" data-toggle="modal" data-target="#modalRegisterForm">Registrieren</button>
+      <% end %>
+    </div>
+
+    <div class="text-center">
+      <button class="btn-round btn purple-gradient animated bounce slow infinite" onclick="document.getElementById('content').scrollIntoView();">
+        <i class="fas fa-angle-double-down"></i>
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div id="content" class="margin-top-10 margin-bottom-10">
+
+  <div id="kurs">
+    <div class="ico">
+      <i class="fas fa-book fa-10x"></i>
+    </div>
+
+    <div style="float: right">
+      <div class="block-text">
+        <h1 class="display-3">Interaktive Kurse</h1>
+        <h3>Durch unsere Kurse kann jeder Anfänger selber einen PC zusammenbauen! <br>
+          Durch eine Registrierung kann man ganz einfach loslegen - und das kostenlos.
+        </h3>
+      </div>
+
+      <blockquote class="blockquote bq-success">
+
+        <h1 class="display-3">Interaktive Kurse</h1>
+        <h3>Durch unsere Kurse kann jeder Anfänger selber einen PC zusammenbauen! <br>
+          Durch eine Registrierung kann man ganz einfach loslegen - und das kostenlos.
+        </h3>
+
+      </blockquote>
+    </div>
+  </div>
+
+</div>
+
+<div id="forum">
+  <div style="float: left; margin-right: 75px">
+    <blockquote class="blockquote">
+
+      <h1 class="display-3">Aktives Forum</h1>
+      <h3>Im Forum kann jeder offen über Hardware reden, egal ob man Einsteiger <br>
+        oder Enthusiast ist. Der perfekte Ort um sich gegenseitig Tipps zu geben!
+      </h3>
+
+    </blockquote>
+  </div>
+
+  <div class="ico">
+    <i class="fas fa-users fa-10x"></i>
+  </div>
+
+  <div class="block-text">
+    <h1 class="display-3">Aktives Forum</h1>
+    <h3>Im Forum kann jeder offen über Hardware reden, egal ob man Einsteiger <br>
+      oder Enthusiast ist. Der perfekte Ort um sich gegenseitig Tipps zu geben!
+    </h3>
+  </div>
+
+</div>

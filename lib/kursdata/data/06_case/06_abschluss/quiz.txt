@@ -1,0 +1,3 @@
+Falls das IO Shield nicht ganz fest ist, muss man extra wieder das Mainboard rausnehmen
+x Wahr
+✔ Richtig

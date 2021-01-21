@@ -1,0 +1,3 @@
+Beide Lücken müssen übereinstimmen, damit die GPU eingebaut werden kann
+✔ Wahr
+x Falsch

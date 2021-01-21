@@ -1,0 +1,5 @@
+Lüfter Strom
+Damit der Kühler auch seine Arbeit erledign kann, braucht er natürlich Strom.
+Diesen Strom kriegt er direkt vom Mainboard.
+Auf dem Mainboard, fast immer direkt neben dem RAM, gibt es einen Stecker mit dem Namen "CPU Fan".
+Bei diesem steckt man das Kabel ein und somit funktioniert der Kühler auch schon.

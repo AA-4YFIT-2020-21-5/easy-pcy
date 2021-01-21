@@ -1,0 +1,6 @@
+Wärmeleitpaste 2
+Am Ende soll es ungefähr so wie im Bild ausschauen.
+Bis jetzt geht die Wärmeleitpaste noch nicht über die ganze CPU.
+Keine Sorge, sobald man den Kühler einbaut, verteilt sich die Paste automatisch zwischen Kühler und CPU.
+Theoretisch kann man die Paste mit einem Wattestäbchen auch selber verteilen,
+ist aber nicht notwendig und macht man eigentlich auch nur, wenn man flüssiges Metall verwendet.

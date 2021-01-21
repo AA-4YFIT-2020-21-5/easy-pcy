@@ -1,0 +1,3 @@
+Peripheriegeräte sind Geräte wie:
+✔ Maus, Tastatur, Monitor, Drucker
+x CPU, RAM, GPU

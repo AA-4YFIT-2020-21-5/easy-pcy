@@ -1,0 +1,5 @@
+HDD Kabel
+Bei neueren Festplatten gibt es zwei Stecker die angeschlossen werden müssen.
+Einerseits SATA Strom, welches vom Netzteil aus geht und für die Stromzufuhr verantwortlich ist.
+Andererseits SATA Daten, welches am Mainboard und an der Festplatte angeschlossen werden muss und führ den Datenfluss ist.
+Beide Anschlüsse sehen ähnlich aus, SATA Strom ist aber immer der längere bzw. größere Anschluss.

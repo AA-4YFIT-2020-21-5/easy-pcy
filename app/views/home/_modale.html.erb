@@ -1,0 +1,163 @@
+<!--#region Modale  -->
+
+<!--Modal Register-->
+<form action="/register" accept-charset="UTF-8" data-remote="true" method="post"
+      class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Registrieren</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <% if flash[:register] %>
+          <div class="alert alert-danger mx-auto w-100" role="alert">
+            <%= flash[:register] %>
+          </div>
+        <% end %>
+
+
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="text" name="name"
+                 id="reg-name" class="form-control validate form-border-purple" required>
+          <label data-error="wrong" data-success="right" for="reg-name" class="purple-text">Name</label>
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" name="email"
+                 id="reg-email" class="form-control validate form-border-purple" required>
+          <label data-error="wrong" data-success="right" for="reg-email" class="purple-text">Email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" name="password"
+                 id="reg-pw" class="form-control validate form-border-purple" minlength="8" maxlength="72" required>
+          <label data-error="wrong" data-success="right" for="reg-pw" class="purple-text">Passwort</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" name="password_confirmation"
+                 id="reg-confirm-pw" class="form-control validate form-border-purple" minlength="8" maxlength="72" required>
+          <label data-error="wrong" data-success="right" for="reg-confirm-pw" class="purple-text">
+            Passwort bestätigen
+          </label>
+        </div>
+
+      </div>
+
+      <div class="text-center margin-bottom-10">
+        <a href="" class="mb-4" data-dismiss="modal" aria-label="Close" style="color: inherit" data-toggle="modal" data-target="#modalLoginForm">
+          Doch anmelden
+        </a>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <input type="submit" class="btn btn-purple" value="Registrieren">
+      </div>
+    </div>
+  </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+<!--Modal Register-->
+
+<!--Modal Login-->
+<form action="/login" accept-charset="UTF-8" data-remote="true" method="post"
+      class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Anmelden</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <% if flash[:login] %>
+          <div class="alert alert-danger mx-auto w-100" role="alert">
+            <%= flash[:login] %>
+          </div>
+        <% end %>
+
+
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" name="email"
+                 id="login-email" class="form-control validate form-border-purple" required>
+          <label data-error="wrong" data-success="right" for="login-email" class="purple-text">Email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" name="password"
+                 id="login-pw" class="form-control validate form-border-purple" minlength="8" maxlength="72" required>
+          <label data-error="wrong" data-success="right" for="login-pw" class="purple-text">Passwort</label>
+        </div>
+
+      </div>
+
+      <div class="text-center margin-bottom-10">
+        <a href="" class="mb-4" data-dismiss="modal" aria-label="Close" style="color: inherit" data-toggle="modal"
+           data-target="#modalRegisterForm">
+          Doch registrieren
+        </a>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <input type="submit" class="btn btn-purple" value="Anmelden">
+      </div>
+    </div>
+  </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+<!--Modal Login-->
+
+<!--Modal Passwort-->
+<form action="/account/password" method="post" class="modal fade" id="modalPasswordForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Passwort ändern</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-unlock-alt prefix grey-text"></i>
+          <input type="password" name="password" id="pw-pw-now" class="form-control validate form-border-purple" minlength="8" required>
+          <label data-error="wrong" data-success="right" for="pw-pw-now" class="purple-text">Aktuelles Passwort</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" name="new_password" id="pw-new" class="form-control validate form-border-purple" minlength="8" required>
+          <label data-error="wrong" data-success="right" for="pw-new" class="purple-text">Neues Passwort</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" name="new_password_confirmation" id="pw-pw-confirm" class="form-control validate form-border-purple" minlength="8" required>
+          <label data-error="wrong" data-success="right" for="pw-pw-confirm" class="purple-text">
+            Neues Passwort bestätigen
+          </label>
+        </div>
+
+      </div>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-purple">Passwort ändern</button>
+      </div>
+    </div>
+  </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
+<!--Modal Passwort-->
+
+<!--#endregion -->

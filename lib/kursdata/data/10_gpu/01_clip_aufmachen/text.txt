@@ -1,0 +1,6 @@
+Clip Aufmachen
+Bevor man die Grafikkarte einbauen kann, muss man vorher noch einen kleinen Schalter betätigen.
+Dieser ist immer ganz am Ende vom PCIe Slot und muss ähnlich wie beim RAM einfach nur nach unten
+gedrückt werden. Bei manchen Mainboards unterscheidet sich vielleicht der Mechanismus ein wenig.
+Wenn dies der Fall ist kann man entweder ins Handbuch des Mainboards nachschauen, oder man probiert ein
+wenig aus. Solange man es nicht mit Gewalt probiert, kann man eigentlich nichts beschädigen.

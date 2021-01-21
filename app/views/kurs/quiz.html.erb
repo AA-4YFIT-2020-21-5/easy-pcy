@@ -1,0 +1,71 @@
+<h1 class="display-3 margin-left-10">Quiz</h1>
+
+<!-- Card -->
+<div id="kurse" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body px-0 pt-0">
+
+    <!-- Card -->
+    <div id="main-card" class="margin-left-10 margin-top-10">
+      <p class="h4"><%= @quiz.prompt %></p>
+        <form action="#" method="post">
+          <% case @quiz.type
+             when :multiple_choice %>
+              <div class="text-left">
+
+                <% @quiz.options.each_with_index do |option, idx| %>
+                  <% idx += 1 # use 1-based index %>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="a<%= idx %>" name="answer" value="<%= idx %>" required>
+                    <label class="custom-control-label" for="a<%= idx %>"><span style="display: inline-block"><%= option %></span></label>
+                  </div>
+                <% end %>
+
+              </div>
+          <% when :true_false %>
+              <div class="text-left">
+
+                <!-- True -->
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="true" name="answer" value="true" required>
+                  <label class="custom-control-label" for="true"><span>Wahr</span></label>
+                </div>
+
+                <!-- False -->
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="false" name="answer" value="false" required>
+                  <label class="custom-control-label" for="false"><span>Falsch</span></label>
+                </div>
+
+              </div>
+          <% when :text_input %>
+              <div class="d-flex justify-content-start">
+                <p style="line-height: 50px">Deine Antwort: </p>
+
+                <div class="md-form my-0 ml-3">
+                  <input type="text" id="answer" name="answer" class="form-control form-border-purple" required>
+                </div>
+
+              </div>
+          <% else raise ArgumentError, "no quiz type matching #{@quiz.type}" %>
+          <% end %>
+          <%= render 'quiz-bottom' %>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        </form>
+    </div>
+  </div>
+
+  <div class="card-footer text-center mt-5">
+    <div class="w-100">
+      <div class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+        <a href="<%= "/kurs/#{@course.handle}/#{@chapter.handle}" %>" class="my-auto text-center w-100" style="color: inherit">
+          <i class="fas fa-angle-left margin-right-10"></i>Zurück
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= render 'profile' %>

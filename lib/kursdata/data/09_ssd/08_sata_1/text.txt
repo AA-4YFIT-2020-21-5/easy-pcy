@@ -1,0 +1,6 @@
+SATA 1
+Zuerst kann man SATA Daten anstecken, man könnte aber vorher auch Strom anstecken.
+Das SATA Kabel hat zwei unterschiedliche Enden. Das Ende, welches in einem 90 Grad Winkel abgebogen ist,
+wird mit dem Anschluss der Festplatte verbunden, das Ende, welches gerade ist, steckt man beim Mainboard an.
+SATA Stecker haben einen L-Förmigen Ausschnitt, d. H. man kann ihn wie viele Stecker nicht falsch anstecken und man muss den Stecker
+nur umdrehen falls er nicht reinwill.

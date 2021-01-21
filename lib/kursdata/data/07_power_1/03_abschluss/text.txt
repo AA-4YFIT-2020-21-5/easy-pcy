@@ -1,0 +1,4 @@
+Abschluss
+Wenn man das Gehäuse oben links einbaut, gibt es unter dem Netzteil noch ein kleines Metallstück.
+Dieses ist dafür da, damit das Netzteil nicht nach unten hängt und damit
+das gesamte Gewicht des Netzteiles nicht nur auf die Schrauben ausgelagert wird.

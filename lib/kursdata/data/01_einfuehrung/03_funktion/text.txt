@@ -1,0 +1,5 @@
+Funktion
+Grundziel dieses Kurses ist es einen funktionalen PC zusammenzubauen.
+Daher wird nicht so sehr auf die Schönheit des Computers geachtet.
+Computer sind sehr modular, d. H. falls man mit seinem PC nicht zufrieden ist,
+kann man später immer noch das Aussehen des PCs verändern.

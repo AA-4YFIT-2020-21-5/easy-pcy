@@ -1,0 +1,3 @@
+Die Metallzäpfchen der GPU müssen außerhalb des Gehäuses sein
+x Wahr
+✔ Falsch

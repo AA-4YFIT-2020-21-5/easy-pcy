@@ -1,0 +1,5 @@
+Inwiefern unterscheiden sich die Anschlüsse?
+x SATA Daten ist größer als SATA Strom
+✔ SATA Strom ist größer als SATA Daten
+x Beide sind identisch
+x Ist von Hersteller zu Hersteller unterschiedlich

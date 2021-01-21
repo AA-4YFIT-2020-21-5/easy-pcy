@@ -1,0 +1,5 @@
+Gehäuse 2
+Diese Slots zu entfernen ist ein wenig tricky.
+Am einfachsten geht es, wenn man auf einer Seite zuerst ein wenig nach hintendrückt,
+und man es dann konstant nach links und rechts wackelt. Irgendwann müsste es dann
+so langsam abnehmbar sein oder es fällt von alleine heraus.

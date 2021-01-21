@@ -1,0 +1,5 @@
+Anschrauben
+Nachdem man das Netzteil richtig ins Gehäuse gelegt hat, muss man es noch anschrauben.
+Beim Netzteil und beim Gehäuse gibt es Löcher, bei denen man das Netzteil anschraubt.
+Wo diese Löcher sind, hängt vom Formfaktor ab.
+Am Ende sollte es ungefähr so aussehen wie im Bild.

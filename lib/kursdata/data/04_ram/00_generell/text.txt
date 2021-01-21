@@ -1,0 +1,8 @@
+Generell
+Der RAM (Random Access Memory) oder auch Arbeitsspeicher, ist das Kurzzeitgedächnis des Computers.
+Jedes ausgeführte Programm muss irgendetwas zwischenspeichern. Eine Speicherung auf der Festplatte wäre aber langsam und nicht sinvoll,
+deswegen gibt es den Arbeitsspeicher. Er ist immer in der Nähe von der CPU und hat auch einen eigenen Takt.
+Wichtig! RAM ist flüchtiger Speicher, d. H. sobald man den PC ausschaltet, verschwinden alle Daten aus dem RAM.
+Das ist der Grund warum ein nicht gespeichertes Dokument oftmals nicht wieder herstellbar ist.
+
+Wir empfehlen heutzutage mindestens 8 GB mit einem Takt von 3200 MHz.

@@ -1,0 +1,5 @@
+HDD Einbauen
+Wenn man den Käfig für die Festplatte heraußen hat kann man nun die Festplatte anschrauben.
+Dazu legt man die Festplatte einfach so in den Käfig, damit die Löcher in der Festplatte mit denen
+des Käfigs übereinstimmen und schraubt damit die Festplatte dann bei beiden Seiten an.
+Wenn man dies getan hat, sollte die Festplatte sich nicht mehr bewegen können.

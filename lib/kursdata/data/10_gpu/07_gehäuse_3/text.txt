@@ -1,0 +1,7 @@
+Gehäuse 3
+Damit die Grafikkarte aber auch fest gehalten wird und nicht wegrutschen kann,
+muss sie beim Gehäuse noch angeschrauft werden.
+Im Bild kann man in der Mitte ein Loch sehen, bei diesem schrauft man die GPU an.
+<bild>
+Am Ende sollte es dann so aussehen.
+<bild>

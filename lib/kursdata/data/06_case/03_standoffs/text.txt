@@ -1,0 +1,7 @@
+Standoffs
+Damit das Mainboard nicht das Metall des Gehäuses berührt gibt es an verschiedenen Stellen Erhebungen.
+Diese richten sich nach dem Formfaktor.
+Bei manchen Gehäuse muss man die Erhebungen selbst einbauen, deswegen wäre es für Einsteiger gut
+ein Gehäuse zu kaufen, wo man dies nicht tun muss.
+Im Bild sieht man, dass die Erhebungen bei diesem Gehäuse schon vom Gehäuse aus sind.
+Bei diesen Erhebungen muss man später auch Schrauben befestigen.

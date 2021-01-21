@@ -1,0 +1,7 @@
+Notch
+Beim PCIe Slot gibt es ähnlich wie beim RAM eine kleine Lücke.
+Die GPU hat ebenfalls eine kleine Lücke. Beide müssen übereinstimmen, damit man die GPU
+einbauen kann.
+Solange aber das Metallstück, bei dem die Anschlüsse sich befinden, in die Richtung des Gehäuserandes schaut beim Einbau,
+sind die zwei Lücken automatisch überein. Ansonsten würden die Anschlüsse innerhalb und nicht außerhalb des
+Gehäuses sein und das wäre natürlich Schwachsinn.

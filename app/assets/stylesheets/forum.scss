@@ -1,0 +1,210 @@
+// Place all the styles related to the Forum controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#entrys {
+  height: 75vh;
+  width: 70%;
+  overflow-y: auto;
+}
+
+#menu {
+  height: 75vh;
+  width: 25%;
+}
+
+label > input[type="radio"] {
+  display: none !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #8e24aa !important;
+  background-color: #8e24aa !important;
+  box-shadow: #8e24aa !important;
+}
+
+//New entry
+#new-entry-div {
+  height: 75vh;
+  width: 60%;
+  overflow-y: auto;
+}
+
+#new-entry-menu {
+  height: auto;
+  width: 35%;
+}
+
+.numberCircle {
+  font-family: "OpenSans-Semibold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  line-height: 0px;
+  border-radius: 50%;
+  font-size: 12px;
+  min-width: 38px;
+  min-height: 38px;
+  margin-bottom: 10px;
+}
+
+.numberCircle span {
+  display: inline-block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  margin-left: 1px;
+  margin-right: 1px;
+  font-size: 20px;
+}
+
+.clrPurple {
+  background: #8e24aa;
+}
+
+::-webkit-file-upload-button {
+  width: auto;
+  height: 50px;
+  color: white;
+  background: #8e24aa;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px 1px #6b4559;
+  outline: none;
+}
+
+::-webkit-file-upload-button:hover {
+  background: #74008c;
+}
+
+//Post
+#post-main {
+  height: auto;
+  width: 62.5%;
+  overflow-y: auto;
+}
+
+#post-side {
+  height: 75vh;
+  width: 32.5%;
+  overflow-y: auto;
+}
+
+#post-side .list-group .list-group-item {
+  border: none;
+}
+
+#post-main .justify-content-around {
+  //gap: 250px;
+}
+
+#post-main .card {
+  margin-bottom: 30px;
+  width: 98.75%;
+}
+
+#post-main .card-footer:hover {
+  background-color: unset !important;
+}
+
+#post-main .card-footer p {
+  cursor: unset !important;
+}
+
+#commentAdd {
+  border: none !important;
+}
+
+#commentAdd:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+  -webkit-box-shadow: unset !important;
+}
+
+#newComment {
+  height: 200px;
+  margin-bottom: 75px
+}
+
+#post-main .card-footer:hover {
+  background-color: rgba(0,0,0,.03) !important;
+}
+
+.post-footer p {
+  width: 30%;
+}
+
+.post-footer p:last-child {
+  text-align: end;
+}
+
+button.h-btn {
+  background: transparent;
+  border: 0;
+}
+
+button.h-btn:focus {
+  outline: transparent;
+}
+
+.post-upvotes form:nth-child(1) {
+  float: left;
+}
+
+.post-upvotes form:nth-child(2) {
+  float: right;
+}
+
+@media screen and (max-width: 992px) {
+  //Main
+  #entry-content-div {
+    margin-bottom: 100px !important;
+  }
+
+  //New Post
+  .numberCircle {
+    width: 8%;
+  }
+
+  .numberCircle > span {
+    font-size: 3vw;
+  }
+
+  //Post entry
+  #post-main {
+    width: 98vw;
+    margin-left: 0.75vw;
+  }
+
+  #post-side {
+    height: auto;
+  }
+
+  #post-main .justify-content-around {
+    gap: 33%
+  }
+
+  #newComment {
+    margin-bottom: 125px
+  }
+}
+
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+  .custom-radio .custom-control-label span {
+    font-size: 4vw;
+    margin-left: 25px;
+  }
+
+  .custom-radio .custom-control-label {
+    margin-bottom: 40px;
+  }
+
+  .custom-radio .custom-control-label::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .custom-radio .custom-control-label:after {
+    width: 60px;
+    height: 60px;
+  }
+}

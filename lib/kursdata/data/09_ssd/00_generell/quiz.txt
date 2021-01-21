@@ -1,0 +1,5 @@
+Was ist die richtige Sortierung der schnellsten Festplatte?
+x HDD, SATA SSD, M.2 SSD
+x SATA SSD, HDD, M.2 SSD
+x SATA SSD, M.2 SSD, HDD
+✔ M.2 SSD, SATA SSD, HDD

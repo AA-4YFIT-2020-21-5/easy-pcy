@@ -1,0 +1,9 @@
+Generell
+Die CPU (Central Processing Unit) ist die zentrale Recheneinheit, welche für fast alles
+verantwortlich ist, was im PC gerade berechnet werden muss.
+Man kann sich die CPU vorstellen, wie das menschliche Gehirn, aber weniger komplizierter.
+Bei einem Kauf eines Prozessors gibt es zwei große Aspekte, die man beachten sollte.
+Einerseits die Anzahl der Kerne. Diese bestimmt, wie viel Multitasking im System gemacht werden kann. Z.B. kann eine CPU mit acht Kernen acht Berechnungen zur selben Zeit ausführen.
+Andererseits den Takt. Der Takt bestimmt, wie viele Berechnungen die CPU in einer Sekunde ausführen kann. Z.B. ein Takt von 5 GHz (5 Milliarden Hertz) kann in einer Sekunde 5 Milliarden Befehle ausfürhen.
+
+Bei den CPU Herstellern gibt es entweder Intel oder AMD, beide haben ihre Vor- und Nachteile.

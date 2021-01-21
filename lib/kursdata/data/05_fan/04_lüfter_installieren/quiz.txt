@@ -1,0 +1,3 @@
+Beim Einbau eines Kühlers gibt es leider keinen Standard
+✔ Wahr
+x Falsch

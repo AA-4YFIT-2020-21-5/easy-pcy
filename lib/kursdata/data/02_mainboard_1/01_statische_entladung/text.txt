@@ -1,0 +1,5 @@
+Statische Entladung
+Beim berühren des Mainboardes muss man Acht geben vor statischen Entladungen, die Chance ist zwar nicht hoch, aber kann trotzdem passieren. 
+Aus diesem Grund sollte man sichergehen, dass man sich statisch entlädt (z.B. eine Türklinke angreifen), 
+oder man legt das Mainboard auf die Verpackung, was die einfachste Lösung für viele ist. 
+Wenn man ganz sicher gehen möchte, kann man sich natürlich auch eine Isoliermatte kaufen.

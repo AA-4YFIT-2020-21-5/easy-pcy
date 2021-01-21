@@ -1,0 +1,3 @@
+Die restlichen Stecker sind Notfallanschlüsse, falls die anderen Anschlüsse nicht gehen sollten
+x Wahr
+✔ Falsch

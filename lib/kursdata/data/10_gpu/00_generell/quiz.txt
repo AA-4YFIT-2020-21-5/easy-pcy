@@ -1,0 +1,5 @@
+Bei welchem PCIe Slot sollte man eine Grafikkarte einbauen?
+x Beim letzten Slot
+✔ Beim längsten, der meistens der erste Slot ist
+x Beim mittelgroßen Slot, der meistens in der Mitte ist
+x Es ist egal wo

@@ -1,0 +1,20 @@
+Generell
+Damit in einem Computer irgendetwas gehen kann, braucht man Strom vom Netzteil.
+Die Aufgabe vom Netzteil ist es, die 230 Volt von der Steckdose auf
+12, 5 und 3,3 Volt runterzubringen und Wechselstrom in Gleichstrom zu verwandeln.
+Welches Netzteil man sich kauft, hängt mal wieder vom Formfaktor des Mainboardes ab.
+Wichtig anzumerken ist, dass man ein Netzteil benötigt, dass genügend Watt für das System bereitstellen kann.
+Z.B. kann man nicht ein 450 Watt Netzteil in ein System einbauen, dass 500 Watt benötigt.
+
+Bei Netzteilen gibt es drei verschiedene Arten:
+Normal, Semi-Modular und Modular.
+Der Unterschied ist, dass bei normalen Netzteilen alle Kabel fest vom Netzteil rausgehen und nicht entfernbar sind.
+Bei Semi-Modularen Netzteilen sind nur die wichtigsten Kabel fest im Netzteil und nicht entfernbar, alle anderen Kabel
+kann man beliebig beim Netzteil ein- und ausstecken.
+Bei modularen Netzteilen kann man alle Kabel beliebig ein- und ausstecken.
+
+Wichtig! Bei Netzteilen sollte man auf keinen Fall sparen! Ein billiges Netzteil einzubauen kann sehr gefährlich sein,
+da es leicht Rauch fangen kann und sich dadurch entzünden kann.
+
+In dieser Kurseinheit wird allerdings nur das Netzteil eingebaut,
+da man die Verkabelung erst später machen sollte.

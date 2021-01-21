@@ -1,0 +1,5 @@
+SATA 2
+SATA Strom anzustecken ist sehr einfach.
+Man nimmt das SATA Kabel, welches vom Netzteil aus geht und das ähnlich aussieht wie das Datenkabel und steckt
+es bei der Festplatte an. Wie vorhin schon erwähnt hat ein SATA Stecker innendrin einen L-Förmigen Ausschnitt,
+also kann man es nicht falsch anstecken.

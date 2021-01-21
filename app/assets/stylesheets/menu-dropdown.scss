@@ -1,0 +1,244 @@
+.wrapper button,
+.wrapper a {
+  width: 100%;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.wrapper button:hover,
+.wrapper a:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.wrapper button:active,
+.wrapper a:active {
+  outline: none;
+  border: none;
+}
+
+.wrapper button:focus,
+.wrapper a:focus {
+  outline: 0;
+}
+
+.drop-btn i {
+  cursor: pointer;
+}
+
+//Toggle Btns
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 13.5px 10px 0;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: #8e24aa;
+}
+
+input:checked + .slider:before {
+  transform: translateX(28.5px);
+}
+
+
+/*Menu Dropdown*/
+.wrapper {
+  z-index: 100;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  width: 400px;
+  height: 240px;
+  overflow: hidden;
+  background: #2E2E2E;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.wrapper.show {
+  display: block !important;
+  display: flex !important;
+}
+
+.wrapper ul li button,
+.wrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: lightgrey;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 8px;
+
+  //Text nicht selektierbar machen
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wrapper ul li:hover button,
+.wrapper ul li:hover a {
+  background: #3a3b3c;
+}
+
+.wrapper ul li button .icon,
+.wrapper ul li a .icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.wrapper ul li button .fa-angle-right,
+.wrapper ul li a .fa-angle-right {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+  margin-right: 5px;
+}
+
+.wrapper ul {
+  list-style: none;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul li {
+  line-height: 55px;
+}
+
+.wrapper .setting-dropdown {
+  display: none;
+}
+
+.wrapper .setting-dropdown .arrow-dropdown {
+  padding-left: 10px;
+  font-size: 20px;
+  color: #b0b3b8;
+  font-weight: 500;
+  cursor: pointer;
+
+  //Text nicht selektierbar machen
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wrapper .setting-dropdown .arrow-dropdown i {
+  margin-right: 15px;
+}
+
+.wrapper .setting-dropdown a {
+  //margin-left: 20px;
+}
+
+#mobile-setting-menu{
+  display: none;
+}
+
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+  #setting-menu{
+    display: none;
+  }
+
+  #mobile-setting-menu{
+    display: initial;
+  }
+
+  .switch {
+    width: 130px;
+    height: 55px;
+  }
+
+  .slider:before {
+    width: 40px;
+    height: 40px;
+    bottom: 7.5px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(70px);
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .menu-bar {
+    width: 100% !important;
+  }
+
+
+  .wrapper .setting-dropdown {
+    height: 500px !important;
+  }
+
+  .wrapper ul li button, .wrapper ul li a {
+    font-size: 5.25vw;
+    line-height: 90px;
+  }
+
+  .wrapper ul li button .icon, .wrapper ul li a .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrapper ul li button .icon i, .wrapper ul li a .icon i{
+    font-size: 4vw;
+  }
+}

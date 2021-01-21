@@ -1,0 +1,5 @@
+Was ist das Grundziel dieses Kurses?
+✔ Einen funktionalen PC zusammenzubauen
+x Einen schönen PC zusammenzubauen
+x Einen funktionalen und schönen PC zusammenzubauen
+x Nur Theorie über Hardware beibringen

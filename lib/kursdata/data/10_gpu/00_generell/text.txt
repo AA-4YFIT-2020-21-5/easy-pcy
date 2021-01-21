@@ -1,0 +1,9 @@
+Generell
+Die Grafikkarte (GPU) ist für alle grafischen Berechnungen im System verantwortlich.
+Die zwei größten Hersteller sind hierbei Nvidia und AMD.
+<bild>
+Eingebaut wird sie beim PCIe Slot. Diesen Slot kann man unten im Bild sehen und ist immer
+auf der unteren Hälfte des Mainboardes. Man kann im Bild noch andere PCIe Slots sehen, welche viel kleiner
+sind. Um eine Grafikkarte voll auszunutzen muss man diese aber beim längsten Slot einbauen.
+Die anderen Slots sind nämlich nicht für die GPU gedacht, sondern für andere Bauteile, welche bei PCIe eingebaut werden
+müssen (z.B. eine Netzwerkkarte, oder eine Capture Card).

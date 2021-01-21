@@ -1,0 +1,3 @@
+Die Wärmeleitpaste verteilt sich automatisch sobald der Kühler auf der CPU ist.
+✔ Wahr
+x Falsch

@@ -1,0 +1,3 @@
+Braucht man grundsätzlich ein Gehäuse?
+x Ja, ansonsten kann der PC nicht starten
+✔ Nein, aber man sollte eines haben

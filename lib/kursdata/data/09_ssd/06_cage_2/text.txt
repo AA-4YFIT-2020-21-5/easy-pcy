@@ -1,0 +1,5 @@
+Cage 2
+Nachdem die Festplatte sich im Käfig befindet, kann man ihn wieder beim Gehäuse anbringen.
+Dazu muss man den Käfig von oben nach unten schieben bei den "Schienen".
+An sich ist der Käfig jetzt schon fest im Gehäuse, aber sicherheitshalber schraubt man oben
+noch fest zu.

@@ -1,0 +1,9 @@
+Lüfter 2
+Am Ende sollte es ungefähr so aussehen wie im Bild.
+Der Kühler sollte jetzt fest auf der CPU sitzen und nicht mehr abnehmbar sein.
+Wie man auch sehen kann, geht das Kabel nach oben.
+
+Einfachtshalber wurde im Kurs jetzt nur gezeigt, was man mindestens an Kühlung haben sollte.
+Wenn man mehr Kühlung benötigt, aber nicht selber mehrere Lüfter einbauen möchte,
+gibt es viele Gehäuse bei denen schon mehrere Lüfter eingebaut sind.
+Wenn man den PC nur für simple Arbeitsprogramme benötigt, reicht aber der CPU Kühler aus.

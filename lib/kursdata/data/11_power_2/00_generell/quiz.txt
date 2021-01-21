@@ -1,0 +1,5 @@
+Welche Komponenten brauchen immer Strom?
+x CPU, Mainboard und GPU
+✔ CPU und Mainboard
+x Mainboard und GPU
+x CPU und GPU

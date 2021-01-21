@@ -1,0 +1,16 @@
+Generell
+Um Daten speichern zu können braucht man eine Festplatte.
+Bei Festplatten gibt es drei Varianten:
+M.2 NVME SSD
+SATA SSD
+SATA HDD
+M.2 SSDs sind bei weitem die schnellsten Speicher zurzeit und sind auch am einfachsten zum einbauen.
+SATA SSDs sind auch schnell, aber der Einbau ist schwerer.
+HDDs sind am langsamsten, haben dafür am meisten Speicherplatz und sind günstiger. Der Einbau ist gleich wie bei SSDs.
+Ein weiterer Nachteil bei HDDs ist, dass sie bei kleinsten Erschütterungen schon Datenverlust haben können.
+
+Wir empfehlen eine M.2 SSD zum starten des Betriebssystemes und eine HDD zum speichern von vielen Dateien.
+Man kann aber auch eine größere M.2 SSD kaufen und hat somit einen wesentlich leichteren Einbauprozess.
+
+Wichtig! Bei SSDs darf man niemals eine kaufen, die "DRAM-less" im Namen besitzt, da diese teilweise sogar langsamer wie
+HDDs sind.

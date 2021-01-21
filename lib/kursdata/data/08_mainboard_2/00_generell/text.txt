@@ -1,0 +1,7 @@
+Generell
+Damit die Anschlüsse des Gehäuses, z.B. der Power Knopf oder USB Anschlüsse, auch funktionieren können
+gibt es vom Gehäuse aus mehrere Stecker, welche man an das Mainboard anschließen muss.
+Diese befinden sich normalerweise ganz unten beim Mainboard und gehen vom linken
+Eck bis zum anderen Eck.
+Auf dem Mainboard befinden sich für all diese Stecker Beschriftungen und auch auf den Kabeln
+selber steht es drauf.

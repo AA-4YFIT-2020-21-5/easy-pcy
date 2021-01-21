@@ -1,0 +1,144 @@
+// Place all the styles related to the Kurs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#kurse {
+  height: 75vh;
+  width: 63%;
+  overflow-y: auto;
+}
+
+#kurse hr {
+  border-top: 3px solid black !important;
+  width: 75% !important;
+}
+
+#kurs-items {
+  min-width: 100%;
+  overflow-y: auto;
+  height: 65vh
+}
+
+#profile {
+  height: 75vh;
+  width: 30%;
+}
+
+#button-group {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#button-group p {
+  cursor: pointer;
+}
+
+#button-group:hover {
+  background-color: #ececec !important;
+}
+
+.card-footer p {
+  cursor: pointer;
+}
+
+.card-footer:hover {
+  background-color: #ececec !important;
+}
+
+.chapter-card {
+  height: 65vh;
+  overflow-y: auto;
+}
+
+#chapterFooter:hover {
+  background-color: initial !important;
+}
+
+#chapterFooter div {
+  height: 50px;
+  vertical-align: center;
+  align-items: center;
+}
+
+#chapterFooter div:hover {
+  background-color: #d6d6d6 !important;
+}
+
+#main-card .sub-card {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main-card .sub-card a {
+  color: inherit;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.kurs-icon-64 {
+  width: 64px;
+}
+
+.kurs-icon-50 {
+  width: 50px;
+}
+
+//@media (orientation:portrait) {
+//  .card-footer {
+//    margin-top: 60vh !important;
+//  }
+//}
+
+@media screen and (max-width: 992px) {
+  #profile {
+    height: 400px;
+  }
+
+  #chapter-img{
+    width: 100% !important;
+  }
+
+  #text-title {
+    width: 95% !important;
+  }
+
+  #change-btns {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 600px) and (orientation: portrait) {
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .kurs-icon-64 {
+    width: 115px;
+    margin-bottom: 10px;
+  }
+  .kurs-icon-50 {
+    width: 100px;
+  }
+
+  .embed-responsive-21by9 {
+    padding-top: 56.25% !important;
+  }
+
+  #chapterFooter div {
+    height: 100px;
+  }
+
+  #profile {
+    height: 750px;
+  }
+}

@@ -1,0 +1,5 @@
+Audio
+Für die Lautsprecher- und Mikrofonanschlüsse gibt es links unten einen Anschluss
+namens "F-Audio" mit dem dazugehörigen Kabel "HD-Audio".
+Dieses Kabel einfach anstecken, man kann das Kabel nicht falsch
+anstecken.

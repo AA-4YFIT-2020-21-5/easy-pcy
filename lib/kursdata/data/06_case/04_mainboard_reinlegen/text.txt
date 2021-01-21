@@ -1,0 +1,6 @@
+Mainboard Reinlegen
+Nun kann man das Mainboard in das Gehäuse reinlegen.
+Wir empfehlen das Gehäuse hinzulegen, man kann das Mainboard zwar auch einbauen, wenn das Gehäuse steht,
+aber es geht nicht bei allen Gehäusen und ist schwerer.
+Zuerst legt man das Mainboard ins Gehäuse, dann drückt man es zur Seite damit die Anschlüsse in den Ausschnitten
+des IO Shieldes sind.

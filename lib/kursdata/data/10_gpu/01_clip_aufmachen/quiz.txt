@@ -1,0 +1,5 @@
+Bei welchem Bauteil musste man ebenfalls einen Schalter runterdrücken?
+x CPU
+x M.2 SSD
+✔ RAM
+x HDD

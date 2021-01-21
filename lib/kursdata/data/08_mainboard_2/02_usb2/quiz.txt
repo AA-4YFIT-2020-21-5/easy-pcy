@@ -1,0 +1,3 @@
+USB 2.0 Anschlüsse besitzen graue Stecker
+✔ Wahr
+x Falsch

@@ -1,0 +1,5 @@
+Warum gibt es RAM?
+x Weil RAM einen eigenen Takt hat kann er der CPU helfen
+✔ Weil eine Speicherung auf eine Festplatte langsam wäre
+x Weil man Daten vom Mainboard speichern muss
+x Weil man damit den Datenfluss auf dem Mainboard beschleunigt

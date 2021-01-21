@@ -1,0 +1,21 @@
+<div class="align-bottom-right w-100">
+
+  <div class="custom-control custom-checkbox margin-left-10 float-left" style="margin-bottom: 8vh">
+    <input type="checkbox" class="custom-control-input" id="answer-show">
+    <label class="custom-control-label" for="answer-show">Lösung anzeigen</label><br>
+    <p id="answer-p" style="display: none"> <%= @quiz.s_solution %> </p>
+  </div>
+
+  <div class="margin-right-10 float-right" style="margin-bottom: 8vh">
+    <button class="btn btn-purple"><i class="fas fa-arrow-circle-right margin-right-10"></i>Antwort senden
+    </button>
+  </div>
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    $("#answer-show").on("change", function () {
+        if (this.checked) $("#answer-p").css("display", "initial")
+        else $("#answer-p").css("display", "none")
+    })
+</script>

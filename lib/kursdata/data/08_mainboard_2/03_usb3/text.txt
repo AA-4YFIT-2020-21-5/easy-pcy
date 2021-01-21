@@ -1,0 +1,6 @@
+USB3
+Die meisten neueren Gehäuse besitzen vorne nur mehr farbige USB Anschlüsse.
+Diese sind USB 3.0 Anschlüsse und besitzen einen eigenen Anschluss beim Mainboard.
+Auch der Stecker an sich ist wesentlich größer für USB 3.0 Anschlüsse.
+Bei diesem Stecker ist es wichtig, wie man ihn ansteckt.
+Falls er nicht reinwill, muss man ihn umdrehen.

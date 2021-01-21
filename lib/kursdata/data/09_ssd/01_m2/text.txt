@@ -1,0 +1,7 @@
+M2
+Wie vorhin schon gesagt wurde ist eine M.2 SSD sehr schnell und auch sehr klein im Vergleich zu einer HDD.
+Eine M.2 SSD einzubauen ist auch sehr einfach.
+
+Auf dem Mainboard, oft unter der CPU, gibt es einen Slot, bei dem man sie installieren kann.
+Wie man im Bild sehen kann hat der Anschluss ähnlich wie beim RAM eine kleine Lücke.
+Die Lücke von der SSD und diese vom Anschluss müssen übereinstimmen.

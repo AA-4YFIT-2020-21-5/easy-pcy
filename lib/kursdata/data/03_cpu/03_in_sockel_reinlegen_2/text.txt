@@ -1,0 +1,8 @@
+In Sockel Reinlegen 2
+Nun kann man die CPU endlich installieren.
+Wichtig! Beim reinlegen in den Sockel nur sehr wenig Kraft anwenden.
+Die CPU soll in den Sockel sanft "reinfallen" und nicht reindgedückt werden.
+Bei zu viel Kraft kann man leicht etwas von der CPU beschädigen, deswegen sollte man vorsichtig sein.
+
+Wie man im Video sehen kann, wurde der Prozessor in den Sockel reingelegt und die zwei Dreiecke stimmen
+überein.

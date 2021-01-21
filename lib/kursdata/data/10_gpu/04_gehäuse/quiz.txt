@@ -1,0 +1,3 @@
+Grafikkarten brauchen immer nur einen Slot beim Gehäuse
+x Wahr
+✔ Falsch

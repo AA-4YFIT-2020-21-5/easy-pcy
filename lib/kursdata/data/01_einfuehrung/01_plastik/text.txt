@@ -1,0 +1,4 @@
+Plastik
+Wenn man Hardware neu auspackt ist sehr oft eine oder mehrere Plastikfolie(n) über dem Bauteil.
+Diese muss man auf jeden Fall entfernen und sicherstellen, dass keine einzige mehr sich auf der Komponente
+befindet! Wenn man es vergisst, kann es gut sein, dass etwas nicht so ganz funktionieren wird.

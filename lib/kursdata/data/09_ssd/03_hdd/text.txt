@@ -1,0 +1,10 @@
+HDD
+Wenn man viel Speicher braucht sollte man sich eine HDD zulegen.
+HDDs wurden in letzter Zeit immer billiger und der Speicherplatz immer größer.
+Wenn man z.B. Videoschnitt macht kann man schon einmal 2 Terrabyte benötigen,
+mit einer HDD kann man das einfach realisieren. Es gibt zwar auch 2 Terrabyte und mehr M.2 SSDs,
+diese sind aber ganz schön teuer.
+
+Wichtig! Die nächsten Schritte wären bei einer SATA SSD identisch.
+Also wenn man gerne schnelleren Speicher mit relativ viel Speicherplatz benötigt,
+kann man gerne auch eine SATA SSD verwenden.

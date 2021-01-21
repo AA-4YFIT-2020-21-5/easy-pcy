@@ -1,0 +1,5 @@
+IO
+Das Gehäuse hat auf der Hinterseite einen Ort, bei dem man das sog. "IO Shield" einbauen kann.
+Das IO Shield ist nichts anderes, wie ein Schild für die Anschlüsse des Mainboards (USB, HDMI,...)
+In der Verpackung des Mainboards befindet sich immer ein IO Shield, welches für genau dieses
+Mainboard entworfen worden ist.

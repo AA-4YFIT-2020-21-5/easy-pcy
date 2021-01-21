@@ -1,0 +1,3 @@
+Das 90 Grad Ende des SATA Kabels steckt man beim Mainboard an
+x Wahr
+✔ Falsch

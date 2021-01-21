@@ -1,0 +1,8 @@
+Netzteil Reinlegen
+Beim Einbauen des Netzteils gibt es je nach Gehäuse zwei Orte.
+Entweder oben links, welches bei unserem Gehäuse so war, oder unten links, was oft bei neueren Gehäusen so ist.
+Einen wirklichen Unterschied macht es aber allerdings nicht aus.
+Wenn es oben links eingebaut gehört, dann legt man es aufwärts rein und schiebt es dann wie im
+Video gezeigt wird gegen den Ausschnitt vom Gehäuse.
+Wenn es unten links eingebaut gehört, dann legt man es seitwärts rein und schiebt es ebenfalls
+gegen den Ausschnitt.

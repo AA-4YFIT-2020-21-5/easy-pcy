@@ -1,0 +1,10 @@
+Info Dual Channel
+Bei RAM gibt es eine Technologie namens "Dual Channel", welche man hernehmen sollte.
+Diese steigert Performance, aber muss nicht verwendet werden.
+Bei einem Mainboard mit zwei RAM Steckplätzen ist Dual Channel automatisch aktiviert wenn man zwei Riegel installiert hat.
+Bei einem Mainboard mit vier Steckplatzen ist meistens der erste und dritte, oder der zweite und vierte Steckplatz für Dual Channel verantwortlich.
+Dies kann aber von Herstellern zu Herstellern anderst sein, im Mainboard-Handbuch oder auf dem Mainboard selber sollte man aber
+nachlesen können, welche Steckplätze für Dual Channel populiert werden müssen.
+
+Wir empfehlen immer mindestens zwei Steckplätze zu populieren, da es ein einfacher Performance-Boost ist.
+Deswegen sollte man z.B. nicht einen 16 Gigabyte Riegel kaufen, sondern zwei 8 Gigabyte Riegel.

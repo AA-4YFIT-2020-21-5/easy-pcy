@@ -1,0 +1,9 @@
+Mainboard
+Der Stromanschluss des Mainboards befindet sich rechts neben dem RAM und hat entweder 20 oder 24 Pins.
+Falls er 20 Pins hat und vom Netzteil ein 24 Pin Stecker rausgeht, kann man einfach die 20 Pins anstecken und die restlichen
+vier hängen dann in der Luft.
+Falls er 24 Pins hat und vom Netzteil ein 20 Pin Stecker rausgeht, kann man die 20 Pins anstecken, die restlichen vier Pins müssen nicht
+unbedingt angeschlossen sein, da diese oft redudante Pins sind, und nur zum Einsatz kommen, wenn ein anderer Pin ausfallen sollte.
+Wenn die Anzahl der Pins bei beiden Komponenten übereinstimmen, braucht man sowieso nur den Stecker anschließen.
+
+Falls der Stecker nicht reinwill, dann muss man ihn wie bei manchen anderen Steckern einfach umdrehen und erneut probieren.

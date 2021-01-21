@@ -1,0 +1,10 @@
+GPU Installieren
+Die GPU einzubauen ist am Anfang ein bisschen schwer.
+Zuerst sollte man sicherstellen, dass man die GPU fest in der Hand hält.
+Dann setzt man hinten an, drückt hinten ein wenig nach unten, und geht dann langsam nach vorne.
+Unten im Bild kann man von der Grafikkarte zwei Metallzäpfchen sehen. Diese müssen beim Einbau im
+Gehäuse sein.
+<bild>
+Wenn diese Metallzäpfchen im Gehäuse sind, kann man nun vorne nach unten drücken.
+Jetzt sollte die Grafikkarte eingebaut sein, zum sichergehen sollte man aber noch ein wenig gleichmäßig nach
+unten drücken.

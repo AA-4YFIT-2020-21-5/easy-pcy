@@ -1,0 +1,187 @@
+<h1 class="display-3 margin-left-10 title"><%= @post.title %></h1>
+
+<div id="post-main" class="float-left">
+
+  <!-- Card -->
+  <div class="margin-left-10 card float-left" style="margin-top: 2px; margin-right: 1px">
+    <!-- Card content -->
+    <div class="card-body">
+      <p><%= @post.content %></p>
+    </div>
+
+    <div class="card-footer post-footer d-flex justify-content-between mt-4" style="padding-left: 10px; padding-right: 10px">
+      <p class="m-0"><%= @post.author.display_name %></p>
+      <p class="m-0"><%= @post.created_at.strftime('%d.%m.%Y %H:%M') %></p>
+      <span class="m-0 post-upvotes">
+        <% if @user %>
+          <%= button_to vote_post_path(@post.id), method: :post, remote: false, class: 'h-btn',
+              params: { vote: !@post.user_voted?(@user.id) } do %>
+            <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+          <% end %>
+          <%= @post.votes.count %>
+
+          <% if @post.author_id == @user.id || @user.moderator? %>
+            <%= button_to post_path(@post.id), method: :delete, remote: false, class: 'h-btn' do %>
+              <i class="d-inline fas fa-times ml-4 margin-right-10" data-toggle="tooltip" data-placement="top"
+                 title="Post löschen"></i>
+            <% end %>
+          <% end %>
+        <% else %>
+          <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+          <%= @post.votes.count %>
+        <% end %>
+
+      </span>
+    </div>
+  </div>
+
+
+  <p class="h1 margin-left-10">Kommentare</p>
+  <% @post.comments.each do |comment| %>
+    <!-- Card -->
+    <div class="margin-left-10 card float-left" style="margin-right: 2px">
+      <!-- Card content -->
+      <div class="card-body">
+        <p><%= comment.content %></p>
+      </div>
+
+      <div class="d-flex justify-content-between post-footer">
+        <p class="m-0" style="padding-left: 20px"><%= comment.author.display_name %></p>
+        <p class="m-0"><%= comment.created_at.strftime('%d.%m.%Y %H:%M') %></p>
+        <span class="m-0 post-upvotes" style="padding-right: 20px">
+          <% if @user %>
+            <%= button_to vote_comment_path(comment.id), method: :post, remote: false, class: 'h-btn',
+                params: { vote: !comment.user_voted?(@user.id) } do %>
+              <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+            <% end %>
+            <%= comment.votes.count %>
+
+            <% if comment.author_id == @user.id || @user.moderator? %>
+              <%= button_to comment_path(comment.id), method: :delete, remote: false, class: 'h-btn' do %>
+                <i class="d-inline fas fa-times ml-4 margin-right-10" data-toggle="tooltip" data-placement="top"
+                   title="Kommentar löschen"></i>
+              <% end %>
+            <% end %>
+          <% else %>
+            <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+            <%= comment.votes.count %>
+          <% end %>
+
+        </span>
+      </div>
+
+      <div class="card-footer m-0">
+        <% comment.replies.each do |reply| %>
+
+          <p class="m-0"><%= reply.content %></p>
+          <div class="d-flex justify-content-between post-footer">
+            <p class="m-0"><%= reply.author.display_name %></p>
+            <p class="m-0" style="margin-left: -20px !important;"><%= reply.created_at.strftime('%d.%m.%Y %H:%M') %></p>
+            <span class="m-0 post-upvotes">
+              <% if @user %>
+                <%= button_to vote_reply_path(reply.id), method: :post, remote: false, class: 'h-btn',
+                    params: { vote: !reply.user_voted?(@user.id) } do %>
+                  <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+                <% end %>
+                <%= reply.votes.count %>
+                <% if reply.author_id == @user.id || @user.moderator? %>
+                  <%= button_to reply_path(reply.id), method: :delete, remote: false, class: 'h-btn' do %>
+                    <i class="d-inline fas fa-times ml-4 margin-right-10" data-toggle="tooltip" data-placement="top"
+                       title="Antwort löschen"></i>
+                  <% end %>
+                <% end %>
+              <% else %>
+                <i class="d-inline fas fa-arrow-up margin-right-10"></i>
+                <%= reply.votes.count %>
+              <% end %>
+
+            </span>
+          </div>
+
+          <hr class="hr-dark">
+        <% end %>
+
+        <form action="<%= comment_replies_path(comment.id) %>" method="post" id="commentAddForm">
+          <div class="md-form input-with-post-icon grey lighten-3 m-0 d-flex" style="border-radius: 10px">
+            <div class="margin-left-10 w-100">
+              <input required autocomplete="off" placeholder="Antwort hinzufügen" type="text" id="commentAdd" name="reply[content]" class="form-control mb-0" style="line-height: 0">
+            </div>
+
+            <button type="submit" id="commentAddBtn" class="margin-right-10"
+                    style="border: none !important" <%= 'disabled' unless @user %>>
+              <i class="fas fa-angle-double-right" style="<%= 'color: #6c757d !important' unless @user %>" aria-hidden="true"></i></button>
+          </div>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        </form>
+
+      </div>
+    </div>
+  <% end %>
+
+  <div class="margin-left-10 card float-left" style="width: 98.75%; margin-right: 2px">
+
+    <!-- Card content -->
+    <div class="card-body">
+
+      <form action="<%= post_comments_path(@post.id) %>" method="post" id="commentNewForm">
+
+        <p class="h2">Kommentar hinzufügen</p>
+        <div id="newComment" class="md-form md-bg">
+          <textarea id="entry-content" name="comment[content]" style="overflow-y: auto" class="h-100 md-textarea form-control bottom-border-purple" rows="3" required></textarea>
+          <label for="entry-content"></label>
+        </div>
+
+        <div class="margin-bottom-10 margin-right-10 align-bottom-right">
+          <button type="submit" class="btn btn-purple" <%= 'disabled' unless @user %>>
+            <i class="fas fa-plus-circle" style="margin-right: 5px"></i>Erstellen
+          </button>
+        </div>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Card -->
+<div id="post-side" class="margin-right-rem card float-right">
+
+  <!-- Card content -->
+  <div class="card-body p-0">
+
+    <h1 class="margin-left-10 margin-top-10">Andere Posts</h1>
+    <hr class="hr-dark w-100">
+    <p class="h4 margin-left-10">Featured Posts</p>
+    <div class="list-group">
+      <% Post.featured.last(3).each do |post| %>
+        <a href="<%= post_path(post.id) %>" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="float-left h5 mb-0"><%= post.title %></h5>
+            <p class="my-auto align-bottom-right margin-right-10"><%= time_ago_in_words(post.created_at) %> ago</p>
+          </div>
+        </a>
+      <% end %>
+    </div>
+
+    <hr class="hr-dark w-100">
+    <p class="h4 margin-left-10 mt-3">Neuste Posts</p>
+
+    <div class="list-group">
+      <%  Post.last(3).each do |post| %>
+        <a href="<%= post_path(post.id) %>" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="float-left h5 mb-0"><%= post.title %></h5>
+            <p class="my-auto align-bottom-right margin-right-10"><%= time_ago_in_words(post.created_at) %> ago</p>
+          </div>
+        </a>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>

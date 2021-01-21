@@ -1,0 +1,72 @@
+<h1 class="display-3 margin-left-10">Neuen Eintrag erstellen</h1>
+
+<!-- Card -->
+<div id="new-entry-div" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body">
+    <form action="/forum/posts" method="post">
+      <p class="h2">Titel</p>
+      <!-- Material background input -->
+      <div class="md-form md-bg w-100">
+        <input type="text" id="new-entry-title" name="post[title]" autocomplete="off" class="form-control bottom-border-purple" required>
+        <label for="new-entry-title" class="purple-text">Titel</label>
+      </div>
+
+      <p class="h2">Inhalt</p>
+      <div id="entry-content-div" class="md-form md-bg w-100" style="height: 200px;">
+        <textarea id="entry-content" name="post[content]" required
+                  class="h-100 md-textarea form-control bottom-border-purple" style="overflow-y: auto" rows="3"></textarea>
+        <label for="entry-content"></label>
+      </div>
+
+      <div class="margin-bottom-10 margin-right-10 align-bottom-right">
+        <button class="btn btn-purple" type="submit"><i class="fas fa-plus-circle" style="margin-right: 5px"></i>Erstellen</button>
+      </div>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </form>
+
+  </div>
+</div>
+
+<!-- Card -->
+<div id="new-entry-menu" class="card float-right margin-right-rem">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Card -->
+    <div class="h-100 w-100">
+      <p class="h2">Tipps</p>
+
+      <div style="margin-top: 30px">
+        <div class="d-inline-block">
+          <span class="numberCircle clrPurple float-left"><span>1</span></span>
+          <p class="ml-5">Der Titel sollte alle wichtigen Informationen kurz und genau beschreiben, damit Leute ihn besser finden können
+          </p>
+        </div>
+
+        <div class="d-inline-block mt-3">
+          <span class="float-left numberCircle clrPurple"><span>2</span></span>
+          <p class="ml-5">
+            Beim Inhalt soll das Problem genau erklärt werden.
+            Zusätzlich sollte man schon vorab erwähnen, was man schon probiert hat
+          </p>
+        </div>
+
+        <div class="d-inline-block mt-3">
+          <span class="float-left numberCircle clrPurple"><span>3</span></span>
+          <p class="ml-5">
+            Wenn dein Post zu wenig Aufmerksamkeit bekommt, versuche ihn auf Social Media zu teilen! Damit können wesentlich mehr
+            Leute deine Frage sehen und es ist auch für diese Seite ein kleiner Support.
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+

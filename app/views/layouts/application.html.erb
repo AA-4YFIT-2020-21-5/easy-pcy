@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>easy-pcy</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <script defer src="/js/dark-mode.js"></script>
+
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= favicon_link_tag asset_path('logo-white.png') %>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+  <nav class="navbar navbar-expand navbar-dark elegant-color">
+    <div id="nav-logo">
+      <a class="navbar-brand" href="/"><strong><img src="/images/home/logo-white.png" alt="logo" style="width: 75px"></strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div id="nav-main">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <h4><a class="nav-link" href="/kurs">Kurse <span class="sr-only">(current)</span></a></h4>
+          </li>
+          <li class="nav-item nav-hide">
+            <h1 style="color: white">|</h1>
+          </li>
+          <li class="nav-item">
+            <h4><a class="nav-link" href="/forum">Forum</a></h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="nav-btns">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="ml-auto navbar-nav">
+          <% if !@user %>
+            <li class="nav-item">
+              <button type="button" class="btn btn-purple" data-toggle="modal" data-target="#modalRegisterForm">Registrieren</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-purple waves-effect" data-toggle="modal" data-target="#modalLoginForm">
+                <span class="text-white">Anmelden</span></button>
+            </li>
+          <% else %>
+            <div class="drop-btn my-auto">
+              <i class="text-white fas fa-user-circle fa-2x"></i>
+            </div>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Basic dropdown -->
+    <% if !@user %>
+      <button id="nav-drop" class="btn btn-purple dropdown-toggle mx-auto" type="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"></button>
+
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRegisterForm">Registrieren</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Anmelden</a>
+      </div>
+    <% end %>
+
+    <!-- Basic dropdown -->
+
+  </nav>
+
+</header>
+
+<div id="page-container">
+  <div id="content-wrap">
+    <div class="wrapper">
+      <ul class="menu-bar">
+
+        <!-- Home -->
+        <li>
+          <button onclick="location.href='/'">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            Home
+          </button>
+        </li>
+
+        <!-- Einstellungen -->
+        <li id="setting-menu" class="setting-item">
+          <button>
+            <div class="icon"><i class="fas fa-cog"></i></div>
+            Einstellungen <i class="fas fa-angle-right"></i>
+          </button>
+        </li>
+
+        <div id="mobile-setting-menu">
+          <%= render 'home/settings-menu' %>
+        </div>
+
+        <!-- Dark Mode -->
+        <li class="float-left w-100">
+          <button class="float-left w-100">
+            <div class="icon"><i class="far fa-moon"></i></div>
+            Dunkelmodus
+
+            <!--Toggle Button-->
+            <label class="my-auto ml-auto switch float-right margin-right-10">
+              <input type="checkbox" name="darkSwitch" id="darkSwitch">
+              <span class="slider"></span>
+            </label>
+          </button>
+        </li>
+
+        <!-- Logout -->
+        <li>
+          <%= button_to '/logout' do %>
+            <div class="icon"><i class="fas fa-sign-out-alt"></i></div>
+            Logout
+          <% end %>
+        </li>
+      </ul>
+
+      <!--Einstellungen Menü-->
+      <ul class="setting-dropdown">
+        <li class="arrow-dropdown back-btn"><i class="fas fa-angle-left"></i>Einstellungen</li>
+
+        <%= render 'home/settings-menu' %>
+      </ul>
+    </div>
+    <%= yield %>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small elegant-color">
+
+    <!-- Copyright -->
+    <div class="margin-left-10 footer-copyright py-3">© 2020 Copyright
+      <a href="http://www.htlsaalfelden.at/" target="_blank"> HTL Saalfelden </a>
+    </div>
+
+    <!-- Impressum / Datenschutz -->
+    <a class="margin-left-10 margin-right-10 py-3 float-right" href="/impressum"> Impressum </a>
+    <a class="py-3 float-right" href="/datenschutz"> Datenschutz </a>
+
+  </footer>
+</div>
+
+<%= render "home/modale" %>
+
+<script !src="">
+    const drop_btn = document.querySelector(".drop-btn");
+    const menu_wrapper = document.querySelector(".wrapper");
+
+    const setting_item = document.querySelector(".setting-item");
+
+    const menu_bar = document.querySelector(".menu-bar");
+    const setting_drop = document.querySelector(".setting-dropdown");
+
+    const back_btn = document.querySelector(".back-btn");
+
+    drop_btn.onclick = (() => {
+        menu_wrapper.classList.toggle("show")
+    })
+
+    setting_item.onclick = (() => {
+        setTimeout(() => {
+            setting_drop.style.display = "block";
+        }, 100)
+
+        menu_wrapper.style.transition = "height .275s linear";
+        menu_wrapper.style.height = "295px";
+        menu_bar.style.marginLeft = "-400px"
+    })
+
+    back_btn.onclick = (() => {
+        menu_bar.style.marginLeft = "0px"
+        setting_drop.style.display = "none";
+        menu_wrapper.style.height = "240px";
+    })
+
+    // $("body > *").not("body > .drop-btn").click(function(e) {
+    //   if (!menu_wrapper.classList.contains("show")) return false
+
+    // console.log(e.target.id);
+    // if(e.target.class==='drop-btn'){
+    //   return false;
+    // }
+    // menu_wrapper.classList.remove("show")
+    // });
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    const token = document.querySelector('meta[name="csrf-token"]').content
+    $('#kurs-hide').on('change', function () {
+        console.log($("#kurs-hide").prop("checked"))
+        $.ajax({
+            type: 'POST',
+            url: '/account/settings',
+            data: {option: 'hide_course_activity', value: $("#kurs-hide").prop("checked")},
+            beforeSend: function (request) {
+                request.setRequestHeader('X-CSRF-Token', token)
+            },
+            success: function (data) {
+                console.log("setting changed")
+            }
+        });
+    });
+
+    $('#forum-hide').on('change', function () {
+        console.log($("#forum-hide").prop("checked"))
+
+        $.ajax({
+            type: 'POST',
+            url: '/account/settings',
+            data: {option: 'hide_forum_activity', value: $("#forum-hide").prop("checked")},
+            beforeSend: function (request) {
+                request.setRequestHeader('X-CSRF-Token', token)
+            },
+            success: function (data) {
+                // console.log("hurra")
+            }
+        });
+    });
+
+</script>
+
+<% if flash[:login] %>
+  <script type="text/javascript" charset="utf-8">
+    $('#modalLoginForm').modal('show');
+  </script>
+<% end %>
+
+<% if flash[:register] %>
+  <script type="text/javascript" charset="utf-8">
+    $('#modalRegisterForm').modal('show');
+  </script>
+<% end %>
+
+</body>
+</html>

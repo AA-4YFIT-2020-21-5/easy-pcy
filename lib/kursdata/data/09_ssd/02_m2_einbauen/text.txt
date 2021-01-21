@@ -1,0 +1,6 @@
+M2 Einbauen
+Um die M.2 SSD zu installieren steckt man sie zuerst in einem 45 Grad Winkel beim Anschluss an.
+Falls man einen magnetischen Schraubendreher hat, kann man einen Schrauben an den Schraubendreher
+anhängen und dann geht man langsam wie im Video zusammen mit der SSD nach unten und schraubt sie an.
+Wenn man keinen magnetischen Schraubendreher hat, macht man das gleiche mit der Hand und schraubt sie
+anschließend an.

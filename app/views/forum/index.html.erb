@@ -1,0 +1,113 @@
+<h1 class="display-3 margin-left-10">Forum</h1>
+
+<!-- Card -->
+<div id="entrys" class="margin-left-10 card float-left">
+
+  <!-- Card content -->
+  <div class="card-body p-0" style="">
+
+    <!-- Card -->
+    <div class="m-0 p-0">
+      <div class="list-group" id="posts">
+
+        <% @posts.each do |post| %>
+
+          <a href="<%= post_url(post.id) %>"
+             data-votes="<%= post.votes.count %>"
+             data-visits="<%= post.visits %>"
+             data-date="<%= post.created_at.to_i %>"
+             class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-2 h5"><%= post.title %></h5>
+            </div>
+            <small class="d-inline pr-2"><%= post.author.display_name %></small>
+            <small class="d-inline pr-2">|</small>
+            <small class="d-inline pr-2"><%= post.created_at.strftime('%d.%m.%Y %H:%M') %></small>
+
+            <div class="float-right" style="margin-top: -10px">
+              <i class="d-inline fas fa-arrow-up"></i>
+              <p class="d-inline"><%= post.votes.count %></p>
+            </div>
+          </a>
+
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card -->
+<div id="menu" class="margin-right-rem card float-right">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Card -->
+    <div class="text-center h-100 w-100">
+      <div class="w-100">
+        <button type="button" class="btn btn-purple btn-lg btn-block" <%= 'disabled' unless @user %>
+                onclick="location.href='/forum/posts/new';">Eintrag erstellen</button>
+      </div>
+
+      <hr class="hr-dark w-100">
+
+      <!-- Search bar -->
+      <div class="md-form md-bg input-with-pre-icon">
+        <i class="fas fa-search input-prefix purple-text" aria-hidden="true"></i>
+        <input type="text" id="search-text" class="form-control bottom-border-purple">
+        <label for="search-text" class="purple-text">Suchen... </label>
+      </div>
+
+      <hr class="hr-dark w-100">
+
+      <div class="text-left">
+        <p class="h4">Sortieren nach</p>
+
+        <!-- Neuste -->
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="new" name="sortRadio" value="date" checked>
+          <label class="custom-control-label" for="new"><span>Neuste</span></label>
+        </div>
+
+        <!-- Beliebtheit -->
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="popularity" name="sortRadio" value="visits">
+          <label class="custom-control-label" for="popularity"><span>Beliebtheit</span></label>
+        </div>
+
+        <!-- Likes -->
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="likes" name="sortRadio" value="votes">
+          <label class="custom-control-label" for="likes"><span>Likes</span></label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script !src="">
+  $(function () {
+    $("#search-text").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#posts a.list-group-item").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+    $("input[type=radio][name=sortRadio]").change(function() {
+      let value = $(this).val();
+      let elements = []
+      let list = $("#posts a.list-group-item")
+
+      list.each(function(_, e) {
+        elements.push([$(e).data(value), e])
+      })
+      elements.sort(function(a, b) { return b[0] - a[0] })
+      elements.forEach(function(e) {
+        document.getElementById('posts').appendChild(e[1])
+      })
+    });
+  });
+</script>

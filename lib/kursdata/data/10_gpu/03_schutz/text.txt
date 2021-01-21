@@ -1,0 +1,4 @@
+Schutz
+Bei Grafikkarten gibt es oft bei der PCIe Schnittstelle und bei den Grafikanschlüssen einen Schutz darüber.
+Den bei der PCIe-Schnittstelle muss man vor dem Einbauen entfernen, die anderen könnte man aber auch erst
+später entfernen.

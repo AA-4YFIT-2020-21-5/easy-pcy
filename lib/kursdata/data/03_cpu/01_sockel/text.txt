@@ -1,0 +1,9 @@
+Sockel
+Der Sockel ist der Platz, wo die CPU auf dem Mainboard sitzt.
+Intel und AMD haben andere Sockel, deswegen benötigt man für eine CPU auch ein Mainboard mit dem passenden Sockel.
+Bei herkömmlichen Intel Prozessoren gibt es zurzeit den 1151 Sockel.
+Bei AMD Ryzen Prozessoren benötigt man den AM4 Sockel.
+
+Den Sockel öffnet man mit dem Hebel. Wie man den Hebel aufmachen muss, ist bei unterschiedlichen Herstellern immer ein wenig anderst.
+Bei den meisten Herstellern muss man wie im Video gezeigt wird den Hebel zuerst nach unten drücken, dann auf die Seite bewegen und anschließend
+nach hinten ziehen.

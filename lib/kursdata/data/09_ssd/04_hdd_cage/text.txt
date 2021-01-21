@@ -1,0 +1,11 @@
+HDD Cage
+Dieser Schritt ist leider bei vielen Gehäusern komplett verschieden.
+Die HDD/SATA SSD kann entweder wie beim verwendeten Gehäuse rechts vom Mainboard aus sein,
+bei manchen Gehäusen ist es aber auch hinter dem Mainboard, unter dem Mainboard, über dem
+Mainboard, usw.
+Grundsätzlich muss man die Festplatte aber immer an eine Art "Käfig" im Gehäuse
+anschrauben.
+In einem Gehäuse wie im Bild gibt es auf der Seite einen Käfig der oben einen Schrauben hat,
+diesen schrauft man locker und anschließend kann man den Käfig noch oben ziehen.
+
+Info: Im Bild wurde der Käfig schon vom Gehäuse entfernt

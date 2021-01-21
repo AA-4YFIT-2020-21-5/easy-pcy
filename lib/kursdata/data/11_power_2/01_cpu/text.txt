@@ -1,0 +1,4 @@
+CPU
+Der Stromanschluss der CPU befindet sich links oben und hat acht Pins.
+Falls der Stecker vom Netzteil keine acht Pins hat, gibt es zwei mal einen vier Pin Stecker.
+Diese muss man gleichzeitig im acht Pin Anschluss einstecken.

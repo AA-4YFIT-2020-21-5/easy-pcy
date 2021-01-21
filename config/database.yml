@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  username: vagrant
+  password: ror_lernportal-4zw%HnR85&5280
+  database: ror_lernportal_development
+
+test:
+  <<: *default
+  database: ror_lernportal_test
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

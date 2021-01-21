@@ -1,0 +1,9 @@
+Lüfter Installieren
+Beim Lüfter wurde der beigelegte Intelkühler hergenommen.
+Wie im Video gezeigt wird legt man den Kühler eigentlich nur auf die CPU drauf.
+Bei vielen Kühlern muss man ihn anschrauben bei den Löchern im Mainboard, beim Intel und AMD Standardkühler ist es einfacher.
+Beim Intelkühler muss man nur die vier Ecken drehen und anschließend runterdrücken.
+Bei den Ecken ist ein Pfeil oben aufgebildet, um den Kühler zu lockern muss man in Pfeilrichtung drehen,
+um ihn zu festigen, was wir wollen, muss man gegen die Pfeilrichtung drehen.
+
+Wichtig! Das Kabel vom Kühler muss nach oben gehen, damit man es später ganz oben beim Mainboard einstecken kann.

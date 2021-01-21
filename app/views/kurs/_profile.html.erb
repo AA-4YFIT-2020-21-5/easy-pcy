@@ -1,0 +1,102 @@
+<!-- Card -->
+<div id="profile" class="margin-right-rem card float-right">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Card -->
+    <div class="text-center h-100 w-100">
+      <% if @user %>
+        <div class="mx-auto">
+          <h4 class="card-title">
+            <%= @user.display_name %>
+            <i class="margin-left-10 fas fa-user-circle fa-2x"></i>
+          </h4>
+        </div>
+
+        <hr class="hr-dark w-75 mx-auto">
+
+        <h1 class="display-4"><%= (@user.progress.completed_courses_percent * 100.0).floor %>%</h1>
+        <p class="h4">Fortschritt</p>
+
+        <% if @user&.administrator? %>
+          <div id="change-btns" class="d-flex flex-column" style="margin-top: 175px">
+            <button id="cancel-btn" class="btn btn-outline-purple" style="display: none">
+              <i class="fas fa-times-circle pl-1" style="margin-right: 5px"></i>Abbrechen
+            </button>
+            <button id="save-btn" class="btn btn-purple" style="display: none">
+              <i class="fas fa-save pl-1" style="margin-right: 5px"></i>Speichern
+            </button>
+          </div>
+        <% end %>
+
+        <div id="button-group" class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+          <hr class="hr-dark w-100 mx-auto mt-0">
+          <p class="text-center w-100 text-danger" data-toggle="modal" data-target="#reset">Fortschritt zurücksetzten</p>
+        </div>
+      <% else %>
+        <div class="mx-auto">
+          <h4 class="card-title">
+            Nicht angemeldet
+          </h4>
+        </div>
+
+        <hr class="hr-dark w-75 mx-auto">
+
+        <h1 class="display-4">- %</h1>
+        <p class="h4">Fortschritt</p>
+
+        <div id="button-group" class="w-100 btn-group-vertical" role="group" aria-label="Vertical button group">
+          <hr class="hr-dark w-100 mx-auto mt-0">
+          <p class="text-center w-100 text-primary" data-toggle="modal" data-target="#modalLoginForm">Anmelden</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+<!--Modal Zurücksetzen-->
+<div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+
+  <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <form action="/kurs/reset" method="post" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="exampleModalLongTitle">Wirklich zurücksetzen?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Wenn du wirklich deinen Fortschritt zurücksetzen möchtest, tippe "zurücksetzen" in das Textfeld ein
+        <div class="md-form md-bg">
+          <input type="text" class="form-control bottom-border-purple">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-purple" data-dismiss="modal">Schließen</button>
+        <button id="reset-btn" type="submit" class="btn btn-outline-purple waves-effect" disabled>Zurücksetzen</button>
+      </div>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </form>
+  </div>
+</div>
+
+<!--Skripts-->
+
+<script !src="">
+
+    $(".bottom-border-purple")
+        .on("keyup", function () {
+            if ($(this).val().includes("zurücksetzen")) $("#reset-btn").prop("disabled", false);
+            else $("#reset-btn").prop("disabled", true)
+        })
+
+    $("#reset-btn").on("click", function () {
+        console.log("reset")
+    })
+
+</script>

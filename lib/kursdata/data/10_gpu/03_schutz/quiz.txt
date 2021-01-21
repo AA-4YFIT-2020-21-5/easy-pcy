@@ -1,0 +1,2 @@
+Den Schutz unten bei der ___-Schnittstelle muss man vor dem Einbau entfernen
+PCIe

@@ -1,0 +1,3 @@
+Der Stromanschluss der CPU hat acht Pins
+✔ Wahr
+x Falsch

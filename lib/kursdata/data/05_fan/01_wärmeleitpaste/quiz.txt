@@ -1,0 +1,5 @@
+Was macht die Wärmeleitpaste?
+x Es leitet die Kälte vom Kühlkörper auf die CPU
+x Kühlt die CPU damit sie nicht überhitzt
+✔ Es übertragt Wärme zwischen CPU und Kühlkörper
+x Kühlt den Kühlkörper damit die CPU kälter ist
